@@ -172,7 +172,9 @@ function Header() {
               <a href="#abc">Join Us</a>
             </li>
             <li>
-              <a href="#abc">Sign In</a>
+              <Link to="/login" href="#abc">
+                Sign In
+              </Link>
             </li>
           </ul>
         </nav>

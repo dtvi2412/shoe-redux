@@ -8,6 +8,8 @@ import { useEffect,useState } from 'react';
 import ShoeDetail from './Pages/ShoeDetail/ShoeDetail';
 import Search from './Pages/Search/Search';
 import Cart from './Pages/Cart/Cart';
+import Footer from './Components/Footer/Footer';
+import Login from './Pages/Login/Login';
 function App() {
   const [backToTop,setBackToTop] = useState(false);
 
@@ -28,6 +30,7 @@ function App() {
     <div className="app" >
       <Header/>
       <Switch> 
+        <Route path="/login" component={Login} />
         <Route path="/search" component={Search} />
         <Route path="/cart" component={Cart}/>
         <Route path="/shoe-detail/:id" component={ShoeDetail} />
@@ -45,7 +48,7 @@ function App() {
           </div>   
       }
     
-   
+      <Footer/>
     </div>
     </Router>
   );
