@@ -21,23 +21,23 @@ function Footer() {
         <div className="footer__content__support">
           <ul>
             <li>
-              <a href="#">Info</a>
+              <a href="#Info">Info</a>
             </li>
 
             <li>
-              <a href="#">Support</a>
+              <a href="#Support">Support</a>
             </li>
 
             <li>
-              <a href="#">Marketting</a>
+              <a href="#Marketting">Marketting</a>
             </li>
 
             <li>
-              <a href="#">Terms of Use</a>
+              <a href="#Terms">Terms of Use</a>
             </li>
 
             <li>
-              <a href="#">Privacy Policy</a>
+              <a href="#Privacy">Privacy Policy</a>
             </li>
           </ul>
         </div>

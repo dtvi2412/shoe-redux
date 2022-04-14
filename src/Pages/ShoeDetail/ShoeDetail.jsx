@@ -129,7 +129,10 @@ function ShoeDetail(props) {
         return (
           <div key={item.id} className="shoeDetail__items__item">
             <div className="shoeDetail__items__item__image">
-              <SRLWrapper options={options}>
+              <SRLWrapper
+                style={{ width: '100%', height: '100%' }}
+                options={options}
+              >
                 <img src={item.linkImage} alt={`img-shoe${item.id}`} />{' '}
               </SRLWrapper>
               <div className="shoeDetail__items__item__image__detail">

@@ -1,54 +1,80 @@
-.login{
-    background: #2193b0;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding:100px 0;
-    &__content{
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        flex-direction: column;
-        
-        background-color: #fff;
-        width:25%;
-        margin: 0 auto;
-        padding: 40px 0;
-        &__name{
-            color:blue;
-            font-size:2.5rem;
-            margin-bottom: 10px;
-        }
-        p{
-            font-size:0.9rem;
-            margin:5px 0;
-        }
-        &__fill{
-            display: flex;
-            flex-direction: column;
-            label{
-               font-weight: bolder;
-               font-size:1.2rem;
-               margin-bottom: 2px;
-            }
-            input{
-                margin-bottom: 5px;
-                padding:5px 10px;
-            }
-            // text-align: left;
-        }
-        &__submit{
-            width: 180px;
+.login {
+  padding: 100px 0;
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-          button{
-            width: 100%;
-              background-color: #04AA6B;
-              color:#fff;
-              outline: none;
-              border: none;
-              padding:10px;
-              cursor: pointer;
-          }
-           
-        }
+    background-color: #fff;
+    border-radius: 8px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    gap: 1rem;
+    width: 500px;
+
+    background: #e5f2f5; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #def9ff,
+      #d2f6ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #c2f4ff,
+      #b3f0ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    &__name {
+      color: rgb(95, 95, 255);
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
+    p {
+      font-size: 0.9rem;
+      margin: 5px 0;
+    }
+    &__fill {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      label {
+        font-weight: bolder;
+        font-size: 1.2rem;
+        margin-bottom: 2px;
+      }
+      input {
+        margin-bottom: 5px;
+        padding: 5px 10px;
+      }
+      // text-align: left;
+    }
+    &__submit {
+      width: 180px;
+
+      button {
+        width: 100%;
+        background-color: #04aa6b;
+        border-radius: 8px;
+        color: #fff;
+        outline: none;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .login {
+    padding: 0px;
+    &__content {
+      width: 100%;
+      & > p {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }

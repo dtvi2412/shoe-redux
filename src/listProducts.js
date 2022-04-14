@@ -1,4921 +1,4509 @@
-import player1 from "./Assets/Images/Player/koszykarze_1.png"
-import player2 from "./Assets/Images/Player/koszykarze_2.png"
-import player3 from "./Assets/Images/Player/koszykarze_3.png"
-import player4 from "./Assets/Images/Player/koszykarze_4.png"
-import player5 from "./Assets/Images/Player/koszykarze_5.png"
-import player6 from "./Assets/Images/Player/koszykarze_6.png"
-import player7 from "./Assets/Images/Player/koszykarze_11.png"
-import player8 from "./Assets/Images/Player/koszykarze_10.png"
-import player9 from "./Assets/Images/Player/koszykarze_9.png"
-import player10 from "./Assets/Images/Player/koszykarze_8.png"
-export const dataProduct = [ 
-    {
-        id:0,
-        name:'NIKE ZOOM KD 12 UNIVERSITY RED',
-        typeName:'BASKETBALL SHOES',
-        price:140,
-        priceDiscount:130,
-        brand:'KD',
-        linkImage:'https://it.basketzone.net/zdjecia/2019/06/18/306/59/NIKE_ZOOM_KD_12_UNIVERSITY_REDs-mini.jpg',
-        type:1,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://de.kicksmaniac.com/zdjecia/2019/06/27/306/29/tn_Q9301air_jordan_11504-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://basketzone.pl/zdjecia/2019/06/27/306/29/Q9301air_jordan_11506-mini.jpg',
-                check:false,
-            },
-            {
-                id:2,
-                linkImage:'https://es.basketzone.net/zdjecia/2019/06/27/306/29/Q9301air_jordan_11505-mini.jpg',
-                check:false,
-            },
-            {
-                id:3,
-                linkImage:'https://sk.basketzone.net/zdjecia/2019/06/27/306/29/Q9301air_jordan_11508-mini.jpg',
-                check:false,
-            },
-            {
-                id:4,
-                linkImage:'https://se.basketzone.net/zdjecia/2019/06/27/306/29/Q9301air_jordan_11509-mini.jpg',
-                check:false,
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:1,
-        name:'NIKE KYRIE FLYTRAP III SOUTH BEACH',
-        typeName:'BASKETBALL SHOES',
-        price:100,
-        priceDiscount:null,
-        brand:'KYRIE',
-        linkImage:'https://sk.basketzone.net/zdjecia/2020/07/31/207/37/NIKE_KYRIE_FLYTRAP_III_SOUTH_BEACHs-mini.jpg?mini',
-        type:1,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://hu.basketzone.net/zdjecia/2020/08/01/708/57/tn_Q11029air_jordan_18399-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://fr.kicksmaniac.com/zdjecia/2020/08/01/708/57/tn_QQ11029air_jordan_18400-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:2,
-                linkImage:'https://basketzone.net/zdjecia/2020/08/01/708/57/tn_QQ11029air_jordan_18401-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:3,
-                linkImage:'https://hu.basketzone.net/zdjecia/2020/08/01/708/57/tn_QQ11029air_jordan_18402-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:4,
-                linkImage:'https://fr.basketzone.net/zdjecia/2020/08/01/708/57/tn_QQ11029air_jordan_18403-mini.jpg?mini&v=3',
-                check:false,
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:2,
-        name:'NIKE LEBRON 18 MULTICOLOR',
-        typeName:'BASKETBALL SHOES',
-        price:100,
-        priceDiscount:null,
-        brand:'LEBRON',
-        linkImage:'https://basketzone.net/zdjecia/2020/11/11/211/21/NIKE_LEBRON_18_MULTICOLORs-mini.jpg?mini',
-        type:1,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://it.basketzone.net/zdjecia/2020/11/11/311/15/tn_Q11384air_jordan_18817-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://no.basketzone.net/zdjecia/2020/11/11/311/15/tn_QQ11384air_jordan_18818-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:2,
-                linkImage:'https://de.basketzone.net/zdjecia/2020/11/11/311/15/tn_QQ11384air_jordan_18819-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:3,
-                linkImage:'https://cz.basketzone.net/zdjecia/2020/11/11/311/15/tn_QQ11384air_jordan_18820-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:4,
-                linkImage:'https://nl.basketzone.net/zdjecia/2020/11/11/311/15/tn_QQ11384air_jordan_18821-mini.jpg?mini&v=3',
-                check:false,
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:3,
-        name:'NIKE AIR JORDAN 3 RETRO CHLOROPHYLL TINKER',
-        typeName:'BASKETBALL SHOES',
-        price:220,
-        priceDiscount:null,
-        brand:'JORDAN',
-        linkImage:'https://it.basketzone.net/zdjecia/2018/12/05/412/24/AIR_JORDAN_3_RETROs-mini.jpg?mini',
-        type:1,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://tr.basketzone.net/zdjecia/2018/12/18/412/13/tn_Q8609air_jordan_602-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://fr.kicksmaniac.com/zdjecia/2018/12/18/412/13/tn_QQ8609air_jordan_603-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:2,
-                linkImage:'https://cz.basketzone.net/zdjecia/2018/12/18/412/13/tn_QQ8609air_jordan_604-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:3,
-                linkImage:'https://tr.basketzone.net/zdjecia/2018/12/18/412/13/tn_QQ8609air_jordan_605-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:4,
-                linkImage:'https://no.basketzone.net/zdjecia/2018/12/18/412/13/tn_QQ8609air_jordan_606-mini.jpg?mini&v=3',
-                check:false,
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:4,
-        name:'NIKE KYRIE LOW 3 TIE DYE',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:null,
-        brand:'KYRIE',
-        linkImage:'https://fr.kicksmaniac.com/zdjecia/2020/09/22/1209/25/NIKE_KYRIE_LOW_3_TIE_DYEs-mini.jpg?mini',
-        type:1,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://tr.basketzone.net/zdjecia/2020/09/22/509/34/tn_Q11186air_jordan_18641-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://tr.basketzone.net/zdjecia/2020/09/22/509/34/tn_QQ11186air_jordan_18642-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:2,
-                linkImage:'https://sk.basketzone.net/zdjecia/2020/09/22/509/34/tn_QQ11186air_jordan_18643-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:3,
-                linkImage:'https://es.kicksmaniac.com/zdjecia/2020/09/22/509/34/tn_QQ11186air_jordan_18644-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:4,
-                linkImage:'https://basketzone.pl/zdjecia/2020/09/22/509/34/tn_QQ11186air_jordan_18645-mini.jpg?mini&v=3',
-                check:false,
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:5,
-        name:'NIKE LEBRON 17 LOW GLOW IN THE DARK',
-        typeName:'BASKETBALL SHOES',
-        price:150,
-        priceDiscount:null,
-        brand:'LEBRON',
-        linkImage:'https://tr.basketzone.net/zdjecia/2020/09/22/1209/17/NIKE_LEBRON_17_LOW_GLOW_IN_THE_DARKs-mini.jpg?mini',
-        type:1,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://nl.basketzone.net/zdjecia/2020/09/22/509/39/tn_Q11180air_jordan_18662-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://es.kicksmaniac.com/zdjecia/2020/09/22/509/39/tn_QQ11180air_jordan_18663-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:2,
-                linkImage:'https://nl.basketzone.net/zdjecia/2020/09/22/509/39/tn_QQ11180air_jordan_18664-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:3,
-                linkImage:'https://de.basketzone.net/zdjecia/2020/09/22/509/39/tn_QQ11180air_jordan_18665-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:4,
-                linkImage:'https://kicksmaniac.com/zdjecia/2020/09/22/509/39/tn_QQ11180air_jordan_18666-mini.jpg?mini&v=3',
-                check:false,
-            },
-        ],       sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:6,
-        name:'NIKE AIR JORDAN MAX AURA 2 COOL GREY',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:null,
-        brand:'JORDAN',
-        linkImage:'https://de.basketzone.net/zdjecia/2021/01/21/401/47/NIKE_AIR_JORDAN_MAX_AURA_2_COOL_GREYs-mini.jpg?mini',
-        type:1,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://it.basketzone.net/zdjecia/2021/02/01/302/47/tn_Q11642air_jordan_19175-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://tr.basketzone.net/zdjecia/2021/02/01/302/47/tn_QQ11642air_jordan_19176-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:2,
-                linkImage:'https://tr.basketzone.net/zdjecia/2021/02/01/302/47/tn_QQ11642air_jordan_19177-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:3,
-                linkImage:'https://fr.basketzone.net/zdjecia/2021/02/01/302/47/tn_QQ11642air_jordan_19178-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:4,
-                linkImage:'https://de.kicksmaniac.com/zdjecia/2021/02/01/302/47/tn_QQ11642air_jordan_19179-mini.jpg?mini&v=3',
-                check:false,
-            },
-        ],       sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:7,
-        name:'NIKE AIR JORDAN MAX AURA 2 BRED',
-        price:150,
-        typeName:'BASKETBALL SHOES',
-        priceDiscount:null,
-        brand:'JORDAN',
-        linkImage:'https://kicksmaniac.com/zdjecia/2020/12/16/412/25/NIKE_AIR_JORDAN_MAX_AURA_2_BREDs-mini.jpg?mini',
-        type:1,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://no.basketzone.net/zdjecia/2020/12/16/612/57/tn_Q11532air_jordan_19020-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://no.basketzone.net/zdjecia/2020/12/16/612/57/tn_QQ11532air_jordan_19021-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:2,
-                linkImage:'https://cz.basketzone.net/zdjecia/2020/12/16/612/57/tn_QQ11532air_jordan_19022-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:3,
-                linkImage:'https://basketzone.pl/zdjecia/2020/12/16/612/57/tn_QQ11532air_jordan_19023-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:4,
-                linkImage:'https://cz.basketzone.net/zdjecia/2020/12/16/612/57/tn_QQ11532air_jordan_19024-mini.jpg?mini&v=3',
-                check:false,
-            },
-        ],       sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:8,
-        name:'NIKE AIR JORDAN 1 RETRO MID UNION BLACK TOE',
-        typeName:'BASKETBALL SHOES',
-        price:220,
-        priceDiscount:null,
-        brand:'JORDAN',
-        linkImage:'https://basketzone.pl/zdjecia/2020/09/04/509/49/NIKE_AIR_JORDAN_1_RETRO_MID_UNION_BLACK_TOEs-mini.jpg?mini',
-        type:1,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://basketzone.pl/zdjecia/2020/09/12/509/36/tn_Q11157air_jordan_18616-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://de.basketzone.net/zdjecia/2020/09/12/509/36/tn_QQ11157air_jordan_18617-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:2,
-                linkImage:'https://no.basketzone.net/zdjecia/2020/09/12/509/36/tn_QQ11157air_jordan_18618-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:3,
-                linkImage:'https://sk.basketzone.net/zdjecia/2020/09/12/509/36/tn_QQ11157air_jordan_18619-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:4,
-                linkImage:'https://de.basketzone.net/zdjecia/2020/09/12/509/36/tn_QQ11157air_jordan_18620-mini.jpg?mini&v=3',
-                check:false,
-            },
-        ],    
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:9,
-        name:'NIKE KYRIE FLYTRAP II DUKE BLUE DEVILS',
-        typeName:'BASKETBALL SHOES',
-        price:95,
-        priceDiscount:80,
-        brand:'KYRIE',
-        linkImage:'https://hu.basketzone.net/zdjecia/2019/08/01/1108/54/NIKE_KYRIE_FLYTRAP_II_DUKE_BLUE_DEVILSs-mini.jpg?mini',
-        type:1,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://de.basketzone.net/zdjecia/2019/08/14/1108/29/tn_Q9438air_jordan_16476-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://hu.basketzone.net/zdjecia/2019/08/14/1108/29/tn_QQ9438air_jordan_16477-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:2,
-                linkImage:'https://fr.basketzone.net/zdjecia/2019/08/14/1108/29/tn_QQ9438air_jordan_16478-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:3,
-                linkImage:'https://es.basketzone.net/zdjecia/2019/08/14/1108/29/tn_QQ9438air_jordan_16479-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:4,
-                linkImage:'https://tr.basketzone.net/zdjecia/2019/08/14/1108/29/tn_QQ9438air_jordan_16480-mini.jpg?mini&v=3',
-                check:false,
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:10,
-        name:'NIKE ZOOM KD 13 NETS HARDWOOD CLASSICS',
-        typeName:'BASKETBALL SHOES',
-        price:145,
-        priceDiscount:null,
-        brand:'KD',
-        linkImage:'https://it.basketzone.net/zdjecia/2020/12/16/312/35/NIKE_ZOOM_KD_13_HARDWOOD_CLASSICSs-mini.jpg?mini',
-        type:1,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://de.kicksmaniac.com/zdjecia/2020/12/16/612/47/tn_Q11542air_jordan_19045-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://sk.basketzone.net/zdjecia/2020/12/16/612/47/tn_QQ11542air_jordan_19046-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:2,
-                linkImage:'https://fr.kicksmaniac.com/zdjecia/2020/12/16/612/47/tn_QQ11542air_jordan_19047-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:3,
-                linkImage:'https://tr.basketzone.net/zdjecia/2020/12/16/612/47/tn_QQ11542air_jordan_19048-mini.jpg?mini&v=3',
-                check:false,
-            },
-            {
-                id:4,
-                linkImage:'https://basketzone.pl/zdjecia/2020/12/16/612/47/tn_QQ11542air_jordan_19049-mini.jpg?mini&v=3',
-                check:false,
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:11,
-        name:'NIKE KYRIE 6 USA OLYMPIC TEAM',
-        typeName:'BASKETBALL SHOES',
-        price:120,
-        priceDiscount:110,
-        brand:'KYRIE',
-        linkImage:'https://cz.basketzone.net/zdjecia/2020/09/10/1209/07/NIKE_KYRIE_6_USA_OLYMPIC_TEAMs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:12,
-        name:'NIKE AIR JORDAN SPORTSWEAR WINGS FLEECE HOODIE BLACK',
-        typeName:'HOODIES',
-        price:80,
-        priceDiscount:65,
-        brand:'JORDAN',
-        linkImage:'https://kicksmaniac.com/zdjecia/2017/07/20/407/25/NIKE_AIR_JORDAN_SPORTSWEAR_WINGS_FLEECE_HOODIE_BLACKs-mini.jpg?mini',
-        type:2,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://nl.kicksmaniac.com/zdjecia/2017/07/20/407/25/tn_Q6095860200_010.1-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-      
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:13,
-        name:'NIKE AIR JORDAN SPORTSWEAR JUMPMAN AIR EMBROIERED TEE GUM RED',
-        typeName:'T-SHIRTS',
-        price:30,
-        priceDiscount:null,
-        brand:'JORDAN',
-        linkImage:'https://nl.kicksmaniac.com/zdjecia/2018/01/15/401/17/M_JSW_TEE_JMPMN_AIR_EMBRDs-mini.jpg?mini',
-        type:2,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://nl.kicksmaniac.com/zdjecia/2018/01/15/401/17/M_JSW_TEE_JMPMN_AIR_EMBRDs-mini.jpg?mini', 
-                check:true,               
-            },
-      
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:14,
-        name:'NIKE NBA LOS ANGELES LAKERS PRACTICE SHORTS FIELD PURPLE',
-        typeName:'T-SHORTS',
-        price:45,
-        priceDiscount:null,
-        brand:'LEBRON',
-        linkImage:'https://basketzone.pl/zdjecia/2018/09/10/809/57/NIKE_NBA_LOS_ANGELES_LAKERS_PRACTICE_SHORTS_FIELD_PURPLEs-mini.jpg?mini',
-        type:2,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://fr.kicksmaniac.com/zdjecia/2018/09/10/809/57/tn_QQ8179AJ5077_504.1-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://de.basketzone.net/zdjecia/2018/09/10/809/57/tn_Q8179AJ5077_504.2-mini.jpg?mini&v=3', 
-                check:false,               
-            }
-      
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:15,
-        name:'NIKE NBA MILWAUKEE BUCKS GIANNIS ANTETOKOUNMPO SWINGMAN JERSEY SUNDIAL',
-        typeName:'T-SHIRTS',
-        price:80,
-        priceDiscount:75,
-        brand:'ANTETOKOUNMPO',
-        linkImage:'https://de.basketzone.net/zdjecia/2018/12/11/1112/25/NIKE_NBA_MILWAUKEE_BUCKS_GIANNIS_ANTETOKOUNMPO_SWINGMAN_JERSEY_SUNDIALs-mini.jpg?mini',
-        type:2,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://se.basketzone.net/zdjecia/2018/12/11/1112/25/tn_Q8586AJ4624_717.1-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:16,
-        name:'NIKE JORDAN DRI-FIT NO-SHOW 3PK SOCKS',
-        typeName:'CLOTHING',
-        price:15,
-        priceDiscount:null,
-        brand:'JORDAN',
-        linkImage:'https://basketzone.net/zdjecia/zdjecia/2015/04/03/NIKE_JORDAN_DRI-FIT_NO-SHOW_3PK_SOCKS_546479-012-mini.jpg?mini',
-        type:2,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://pl.kicksmaniac.com/zdjecia/zdjecia/2015/04/03/tn_QQ3445546479-012-PHCBH001-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:17,
-        name:'NIKE AIR JORDAN EVERYDAY WATERFALL SOCKS BLACK',
-        typeName:'CLOTHING',
-        price:15,
-        priceDiscount:null,
-        brand:'JORDAN',
-        linkImage:'https://kicksmaniac.com/zdjecia/2019/10/14/1010/08/NIKE_AIR_JORDAN_EVERYDAY_WATERFALL_SOCKS_BLACKs-mini.jpg?mini',
-        type:2,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://no.basketzone.net/zdjecia/2019/10/14/1010/08/tn_Q9907SX6274_010.1-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:18,
-        name:'NIKE AIR JORDAN EVERYDAY WATERFALL SOCKS WHITE',
-        typeName:'CLOTHING',
-        price:15,
-        priceDiscount:null,
-        brand:'JORDAN',
-        linkImage:'https://fr.basketzone.net/zdjecia/2018/07/16/907/54/NIKE_AIR_JORDAN_EVERYDAY_WATERFALL_SOCKS_WHITEs-mini.jpg?mini',
-        type:2,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://it.basketzone.net/zdjecia/2018/07/16/907/54/tn_Q7831SX6274_100.1-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:19,
-        name:'NIKE AIR JORDAN JUMPMAN NO-SHOW SOCKS BLACK',
-        typeName:'CLOTHING',
-        price:15,
-        priceDiscount:null,
-        brand:'JORDAN',
-        linkImage:'https://se.basketzone.net/zdjecia/2017/09/07/1009/00/NIKE_AIR_JORDAN_JUMPMAN_NO_SHOW_SOCKS_BLACKs-mini.jpg?mini',
-        type:2,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://de.basketzone.net/zdjecia/2017/09/07/1009/20/tn_Q6153sx5546_010.1-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:20,
-        name:'NIKE AIR JORDAN JUMPMAN NO-SHOW SOCKS BLACK WHITE GYM RED',
-        typeName:'CLOTHING',
-        price:15,
-        priceDiscount:null,
-        brand:'JORDAN',
-        linkImage:'https://dk.basketzone.net/zdjecia/2017/04/20/904/42/NIKE_AIR_JORDAN_JUMPMAN_NO_SHOW_SOCKS_BLACK_WHITE_GYM_REDs-mini.jpg?mini',
-        type:2,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://dk.basketzone.net/zdjecia/2017/04/20/904/17/tn_Q5742SX5546_011.1-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:21,
-        name:'NIKE NBA GOLDEN STATE WARRIOS KEVIN DURANT SWINGMAN JERSEY ROAD',
-        typeName:'T-SHIRTS',
-        price:75,
-        priceDiscount:65,
-        brand:'KD',
-        linkImage:'https://sk.basketzone.net/zdjecia/2017/12/04/412/32/NIKE_NBA_GOLDEN_STATE_WARRIORS_KEVIN_DURANT_SWINGMAN_JERSEY_ROAD__RUSH_BLUEs-mini.jpg?mini',
-        type:2,
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:22,
-        name:'NIKE AIR MAX 90 ESSENTIAL ALL BLACK',
-        typeName:'SPORTS SHOES',
-        price:130,
-        priceDiscount:120,
-        brand:'AIR',
-        linkImage:'https://fr.basketzone.net/zdjecia/2018/02/02/802/01/NIKE_AIR_MAX_90_ESSENTIAL_ALL_BLACKs-mini.jpg?mini',
-        type:3,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://de.kicksmaniac.com/zdjecia/zdjecia/2013/09/24/tn_QQ2163jordanshoes_5585-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://it.kicksmaniac.com/zdjecia/zdjecia/2013/09/24/tn_QQ2163jordanshoes_5586-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:2,
-                linkImage:'https://fr.basketzone.net/zdjecia/zdjecia/2013/09/24/tn_QQ2163jordanshoes_5587-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:3,
-                linkImage:'https://tr.basketzone.net/zdjecia/zdjecia/2013/09/24/tn_QQ2163jordanshoes_5588-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:4,
-                linkImage:'https://se.basketzone.net/zdjecia/zdjecia/2013/09/24/tn_QQ2163jordanshoes_5589-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:23,
-        name:'NIKE AIR SKYLON II NAVY',
-        typeName:'SPORTS SHOES',
-        price:95,
-        priceDiscount:75,
-        brand:'AIR',
-        linkImage:'https://nl.kicksmaniac.com/zdjecia/2019/03/15/403/36/NIKE_AIR_SKYLON_II_ARMORY_NAVYs-mini.jpg?mini',
-        type:3,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://it.kicksmaniac.com/zdjecia/2019/05/04/1105/02/tn_Q9016jordan_shoes1-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://it.basketzone.net/zdjecia/2019/05/04/1105/02/tn_QQ9016jordan_shoes2-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:2,
-                linkImage:'https://nl.kicksmaniac.com/zdjecia/2019/05/04/1105/02/tn_QQ9016jordan_shoes3-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:3,
-                linkImage:'https://basketzone.net/zdjecia/2019/05/04/1105/02/tn_QQ9016jordan_shoes4-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:4,
-                linkImage:'https://nl.kicksmaniac.com/zdjecia/2019/05/04/1105/02/tn_QQ9016jordan_shoes5-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:24,
-        name:'NIKE AIR MAX 90 ESSENTIAL WOLF GREY',
-        typeName:'SPORTS SHOES',
-        price:130,
-        priceDiscount:null,
-        brand:'AIR',
-        linkImage:'https://sk.basketzone.net/zdjecia/2019/02/20/302/26/NIKE_AIR_MAX_90_ESSENTIAL_WOLF_GREYs-mini.jpg?mini',
-        type:3,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://hu.basketzone.net/zdjecia/2019/04/11/204/44/tn_Q8873jordan_shoes26-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://fr.basketzone.net/zdjecia/2019/04/11/204/44/tn_QQ8873jordan_shoes27-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:2,
-                linkImage:'https://hu.basketzone.net/zdjecia/2019/04/11/204/44/tn_QQ8873jordan_shoes28-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:3,
-                linkImage:'https://cz.basketzone.net/zdjecia/2019/04/11/204/44/tn_QQ8873jordan_shoes29-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:4,
-                linkImage:'https://tr.basketzone.net/zdjecia/2019/04/11/204/44/tn_QQ8873jordan_shoes30-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:25,
-        name:'NIKE AIR SKYLON II WHITE ORANGE BLUE',
-        typeName:'SPORTS SHOES',
-        price:95,
-        priceDiscount:80,
-        brand:'AIR',
-        linkImage:'https://de.basketzone.net/zdjecia/2019/03/15/503/37/NIKE_AIR_SKYLON_IIs-mini.jpg?mini',
-        type:3,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://fr.basketzone.net/zdjecia/2019/04/25/404/11/tn_Q9015jordan_shoes8-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://cz.basketzone.net/zdjecia/2019/04/25/404/11/tn_QQ9015jordan_shoes9-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:2,
-                linkImage:'https://tr.basketzone.net/zdjecia/2019/04/25/404/11/tn_QQ9015jordan_shoes10-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:3,
-                linkImage:'https://basketzone.pl/zdjecia/2019/04/25/404/11/tn_QQ9015jordan_shoes11-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:4,
-                linkImage:'https://nl.basketzone.net/zdjecia/2019/04/25/404/11/tn_QQ9015jordan_shoes12-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:26,
-        name:'NIKE GRANDSTAND II WHITE',
-        typeName:'SPORTS SHOES',
-        price:80,
-        priceDiscount:65,
-        brand:'AIR',
-        linkImage:'https://it.kicksmaniac.com/zdjecia/2019/03/27/403/31/NIKE_GRANDSTAND_II_WHITEs-mini.jpg?mini',
-        type:3,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://de.basketzone.net/zdjecia/2019/05/04/105/08/tn_Q9013jordan_shoes22-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://basketzone.net/zdjecia/2019/05/04/105/08/tn_QQ9013jordan_shoes23-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:2,
-                linkImage:'https://cz.basketzone.net/zdjecia/2019/05/04/105/08/tn_QQ9013jordan_shoes24-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:3,
-                linkImage:'https://hu.basketzone.net/zdjecia/2019/05/04/105/08/tn_QQ9013jordan_shoes25-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:4,
-                linkImage:'https://sk.basketzone.net/zdjecia/2019/05/04/105/08/tn_QQ9013jordan_shoes26-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:27,
-        name:'NEW BALANCE X-90 BURGUNDY',
-        typeName:'SPORTS SHOES',
-        price:110,
-        priceDiscount:95,
-        brand:'BALANCE',
-        linkImage:'https://se.basketzone.net/zdjecia/2019/04/12/304/21/NEW_BALANCE_X_90_BURGUNDYs-mini.jpg?mini',
-        type:3,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://cz.basketzone.net/zdjecia/2019/05/14/1005/11/tn_Q9049jordan_shoes30-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://es.kicksmaniac.com/zdjecia/2019/05/14/1005/11/tn_QQ9049jordan_shoes31-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:2,
-                linkImage:'https://es.basketzone.net/zdjecia/2019/05/14/1005/11/tn_QQ9049jordan_shoes32-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:3,
-                linkImage:'https://basketzone.pl/zdjecia/2019/05/14/1005/11/tn_QQ9049jordan_shoes33-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:4,
-                linkImage:'https://no.basketzone.net/zdjecia/2019/05/14/1005/11/tn_QQ9049jordan_shoes34-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:28,
-        name:'ADIDAS TUBULAR SHADOW',
-        typeName:'SPORTS SHOES',
-        price:90,
-        priceDiscount:null,
-        brand:'ADIDAS',
-        linkImage:'https://dk.basketzone.net/zdjecia/2018/10/26/310/58/ADIDAS_TUBULAR_SHADOW_REDs-mini.jpg?mini',
-        type:3,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://nl.basketzone.net/zdjecia/2019/02/25/402/57/tn_Q7319jordan_shoes1-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://se.basketzone.net/zdjecia/2019/02/25/402/57/tn_QQ7319jordan_shoes2-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:2,
-                linkImage:'https://it.kicksmaniac.com/zdjecia/2019/02/25/402/57/tn_QQ7319jordan_shoes3-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:3,
-                linkImage:'https://kicksmaniac.com/zdjecia/2019/02/25/402/57/tn_QQ7319jordan_shoes4-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:4,
-                linkImage:'https://kicksmaniac.com/zdjecia/2019/02/25/402/57/tn_QQ7319jordan_shoes5-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:29,
-        name:'NEW BALANCE 574 BURGUNDY',
-        typeName:'SPORTS SHOES',
-        price:80,
-        priceDiscount:65,
-        brand:'BALANCE',
-        linkImage:'https://es.basketzone.net/zdjecia/2019/04/11/304/03/NEW_BALANCE_574_BURGUNDYs-mini.jpg?mini',
-        type:3,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://basketzone.pl/zdjecia/2019/06/01/1106/03/tn_Q9066jordan_shoes29-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://de.basketzone.net/zdjecia/2019/06/01/1106/03/tn_QQ9066jordan_shoes30-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:2,
-                linkImage:'https://sk.basketzone.net/zdjecia/2019/06/01/1106/03/tn_QQ9066jordan_shoes31-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:3,
-                linkImage:'https://kicksmaniac.com/zdjecia/2019/06/01/1106/03/tn_QQ9066jordan_shoes32-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:4,
-                linkImage:'https://dk.basketzone.net/zdjecia/2019/06/01/1106/03/tn_QQ9066jordan_shoes33-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:30,
-        name:'NEW BALANCE 373 BLACK',
-        typeName:'SPORTS SHOES',
-        price:65,
-        priceDiscount:null,
-        brand:'BALANCE',
-        linkImage:'https://basketzone.net/zdjecia/2019/04/11/404/45/NEW_BALANCE_373_BLACKs-mini.jpg?mini',
-        type:3,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://kicksmaniac.com/zdjecia/2019/05/09/1005/08/tn_Q9093jordan_shoes22-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://cz.basketzone.net/zdjecia/2019/05/09/1005/08/tn_QQ9093jordan_shoes23-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:2,
-                linkImage:'https://se.basketzone.net/zdjecia/2019/05/09/1005/08/tn_QQ9093jordan_shoes24-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:3,
-                linkImage:'https://fr.kicksmaniac.com/zdjecia/2019/05/09/1005/08/tn_QQ9093jordan_shoes25-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:4,
-                linkImage:'https://de.basketzone.net/zdjecia/2019/05/09/1005/08/tn_QQ9093jordan_shoes28-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:31,
-        name:'NIKE AIR MAX 90 ESSENTIAL TRIPLE WHITE',
-        typeName:'SPORTS SHOES',
-        price:130,
-        priceDiscount:120,
-        brand:'BALANCE',
-        linkImage:'https://es.basketzone.net/zdjecia/2019/03/27/403/33/NIKE_AIR_MAX_90_ESSENTIAL_TRIPLE_WHITEs-mini.jpg?mini',
-        type:3,
-        imageDetail:[
-            {
-                id:0,
-                linkImage:'https://no.basketzone.net/zdjecia/2016/03/28/603/40/tn_Q4312jordanshoes_14386-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:1,
-                linkImage:'https://it.kicksmaniac.com/zdjecia/2016/03/28/603/40/tn_QQ4312jordanshoes_14387-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:2,
-                linkImage:'https://basketzone.net/zdjecia/2016/03/28/603/40/tn_QQ4312jordanshoes_14388-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:3,
-                linkImage:'https://it.kicksmaniac.com/zdjecia/2016/03/28/603/40/tn_QQ4312jordanshoes_14389-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-            {
-                id:4,
-                linkImage:'https://es.basketzone.net/zdjecia/2016/03/28/603/40/tn_QQ4312jordanshoes_14390-mini.jpg?mini&v=3', 
-                check:true,               
-            },
-        ],
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:32,
-        name:'NIKE LEBRON WITNESS V VOLT',
-        typeName:'BASKETBALL SHOES',
-        price:95,
-        priceDiscount:85,
-        brand:'LEBRON',
-        linkImage:'https://it.kicksmaniac.com/zdjecia/2021/04/03/604/40/NIKE_LEBRON_WITNESS_V_VOLTs-mini.jpg?mini',
-        type:1,
-    },
-    {
-        id:33,
-        name:'NIKE LEBRON WITNESS IV LAKERS',
-        typeName:'BASKETBALL SHOES',
-        price:95,
-        priceDiscount:null,
-        brand:'LEBRON',
-        linkImage:'https://es.basketzone.net/zdjecia/2019/10/04/110/26/NIKE_LEBRON_WITNESS_IV_LAKERSs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:34,
-        name:'NIKE LEBRON 17 LOW PARTICLE GREY',
-        typeName:'BASKETBALL SHOES',
-        price:150,
-        priceDiscount:130,
-        brand:'LEBRON',
-        linkImage:'https://es.kicksmaniac.com/zdjecia/2020/09/22/1209/36/NIKE_LEBRON_17_LOW_PARTICLE_GREYs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:35,
-        name:'NIKE LEBRON 17 LOW TITAN',
-        typeName:'BASKETBALL SHOES',
-        price:150,
-        priceDiscount:null,
-        brand:'LEBRON',
-        linkImage:'https://ro.basketzone.net/zdjecia/2020/11/08/611/20/NIKE_LEBRON_17_LOW_TITANs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:36,
-        name:'NIKE LEBRON WITNESS V OREO',
-        typeName:'BASKETBALL SHOES',
-        price:95,
-        priceDiscount:null,
-        brand:'LEBRON',
-        linkImage:'https://it.basketzone.net/zdjecia/2020/12/06/412/33/NIKE_LEBRON_WITNESS_V_OREOs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:37,
-        name:'NIKE LEBRON WITNESS V BLACK LIGHT BLUE FURY',
-        typeName:'BASKETBALL SHOES',
-        price:95,
-        priceDiscount:null,
-        brand:'LEBRON',
-        linkImage:'https://dk.basketzone.net/zdjecia/2021/03/09/603/43/NIKE_LEBRON_WITNESS_V_BLACK_LIGHT_BLUE_FURYs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:38,
-        name:'NIKE NBA LOS ANGELES LAKERS LEBRON JAMES ASSOCIATION EDITION SWINGMAN JERSEY',
-        typeName:'T-SHIRTS',
-        price:85,
-        priceDiscount:null,
-        brand:'LEBRON',
-        linkImage:'https://nl.kicksmaniac.com/zdjecia/2020/10/05/410/51/NIKE_NBA_LOS_ANGELES_LAKERS_LEBRON_JAMES_ASSOCIATION_EDITION_SWINGMAN_JERSEY_WHITEs-mini.jpg?mini',
-        type:2,
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:39,
-        name:'NIKE AIR JORDAN SUPER.FLY 5 PO RED BLAKE GRIFFIN',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:110,
-        brand:'GRIFFIN',
-        linkImage:'https://fr.basketzone.net/zdjecia/2017/04/05/804/26/NIKE_AIR_JORDAN_SUPER.FLY_5_PO_RED_BLAKE_GRIFFINs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:40,
-        name:'NIKE AIR JORDAN SUPER.FLY 5 PO BLUE BLAKE GRIFFIN',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:110,
-        brand:'GRIFFIN',
-        linkImage:'https://nl.kicksmaniac.com/zdjecia/2017/04/25/1204/37/NIKE_AIR_JORDAN_SUPER.FLY_5_PO_BLUE_BLAKE_GRIFFINs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:41,
-        name:'NIKE AIR JORDAN SUPER.FLY 5 PO BRED BLAKE GRIFFIN',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:110,
-        brand:'GRIFFIN',
-        linkImage:'https://it.basketzone.net/zdjecia/2017/05/06/1105/49/NIKE_AIR_JORDAN_SUPER.FLY_5_PO_BRED_BLAKE_GRIFFINs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:42,
-        name:'NIKE AIR JORDAN SUPER.FLY 5 PO WHITE BLAKE GRIFFIN',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:105,
-        brand:'GRIFFIN',
-        linkImage:'https://de.basketzone.net/zdjecia/2017/03/15/1003/10/NIKE_AIR_JORDAN_SUPER.FLY_5_PO_WHITE_BLAKE_GRIFFINs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:43,
-        name:'NIKE AIR JORDAN SUPER.FLY 5 PO BULLS ALTERNATE BLAKE GRIFFIN',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:110,
-        brand:'GRIFFIN',
-        linkImage:'https://dk.basketzone.net/zdjecia/2017/04/24/304/35/NIKE_AIR_JORDAN_SUPER.FLY_5_PO_BULLS_ALTERNATE_BLAKE_GRIFFINs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:44,
-        name:'NIKE AIR JORDAN SUPER.FLY 4 RED JACQUARD BLAKE GRIFFIN',
-        typeName:'BASKETBALL SHOES',
-        price:145,
-        priceDiscount:110,
-        brand:'GRIFFIN',
-        linkImage:'https://es.basketzone.net/zdjecia/zdjecia/2015/11/05/NIKE_AIR_JORDAN_SUPER.FLY_4_JACQUARD_BLAKE_GRIFFIN_812870-605-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:45,
-        name:'NIKE AIR JORDAN SUPER.FLY 4 PO "RIO TEAL" BLAKE GRIFFIN',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:95,
-        brand:'GRIFFIN',
-        linkImage:'https://cz.basketzone.net/zdjecia/2016/04/09/804/57/NIKE_AIR_JORDAN_SUPER.FLY_4_PO___RIO_TEAL___BLAKE_GRIFFINs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:46,
-        name:'NIKE AIR JORDAN SUPER.FLY 5 PO BLACK METTALIC GOLD BLAKE GRIFFIN',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:115,
-        brand:'GRIFFIN',
-        linkImage:'https://hu.basketzone.net/zdjecia/2017/02/09/902/50/NIKE_AIR_JORDAN_SUPER.FLY_5_PO_BLACK_METTALIC_GOLD_BLAKE_GRIFFINs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:47,
-        name:'NIKE AIR JORDAN SUPER.FLY 5 PO NAVY BLUE LIME BLAKE GRIFFIN',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:110,
-        brand:'GRIFFIN',
-        linkImage:'https://fr.kicksmaniac.com/zdjecia/2017/03/07/903/52/NIKE_AIR_JORDAN_SUPER.FLY_5_PO_s-mini.jpg?minii',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:48,
-        name:'NIKE AIR JORDAN SUPER.FLY 5 PO CONTRAST BLAKE GRIFFIN',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:100,
-        brand:'GRIFFIN',
-        linkImage:'https://nl.basketzone.net/zdjecia/2017/05/06/1105/40/NIKE_AIR_JORDAN_SUPER.FLY_5_PO_CONTRAST_BLAKE_GRIFFINs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:49,
-        name:'NIKE PG 5 LA DRIP PAUL GEORGE',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:null,
-        brand:'GEORGE',
-        linkImage:'https://es.kicksmaniac.com/zdjecia/2021/03/09/603/18/NIKE_PG_5_LA_DRIP_PAUL_GEORGEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:50,
-        name:'NIKE PG 5 DIGI CAMO PAUL GEORGE',
-        typeName:'BASKETBALL SHOES',
-        price:120,
-        priceDiscount:null,
-        brand:'GEORGE',
-        linkImage:'https://se.basketzone.net/zdjecia/2020/09/28/309/31/NIKE_PG_4_DIGI_CAMO_PAUL_GEORGEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:51,
-        name:'NIKE PG 5 WHITE MULTICOLOR PAUL GEORGE',
-        typeName:'BASKETBALL SHOES',
-        price:100,
-        priceDiscount:null,
-        brand:'GEORGE',
-        linkImage:'https://tr.basketzone.net/zdjecia/2021/04/04/404/19/NIKE_PG_5_WHITE_MULTICOLOR_PAUL_GEORGEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:52,
-        name:'NIKE PG 4 BRED PAUL GEORGE',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:95,
-        brand:'GEORGE',
-        linkImage:'https://fr.kicksmaniac.com/zdjecia/2020/09/04/1209/17/NIKE_PG_4_BRED_PAUL_GEORGEs-mini.jpg?mini',
-        type:1,
-    },
-    {
-        id:53,
-        name:'NIKE PG 4 CLIPPERS PAUL GEORGE',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:null,
-        brand:'GEORGE',
-        linkImage:'https://fr.kicksmaniac.com/zdjecia/2020/11/05/511/27/NIKE_PG_4_CLIPPERS_PAUL_GEORGEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:54,
-        name:'NIKE PG 5 BLACK MULTICOLOR PAUL GEORGE',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:null,
-        brand:'GEORGE',
-        linkImage:'https://fr.kicksmaniac.com/zdjecia/2021/03/09/603/39/NIKE_PG_5_BLACK_MULTICOLOR_PAUL_GEORGEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:55,
-        name:'NIKE PG 4 TRIPLE BLACK PAUL GEORGE',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:null,
-        brand:'GEORGE',
-        linkImage:'https://dk.basketzone.net/zdjecia/2020/09/29/309/45/NIKE_PG_4_TRIPLE_BLACK_PAUL_GEORGEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:56,
-        name:'NIKE PG 4 USA PAUL GEORGE',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:null,
-        brand:'GEORGE',
-        linkImage:'https://es.kicksmaniac.com/zdjecia/2020/08/11/208/01/NIKE_PG_4_USA_PAUL_GEORGEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:57,
-        name:'NIKE PG 4 HEATHER BLACK BLUE PAUL GEORGE',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:null,
-        brand:'GEORGE',
-        linkImage:'https://basketzone.pl/zdjecia/2020/08/11/408/20/NIKE_PG_4_HEATHER_BLACK_BLUE_PAUL_GEORGEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:58,
-        name:'NIKE PG 5 BRED PAUL GEORGE',
-        typeName:'BASKETBALL SHOES',
-        price:115,
-        priceDiscount:null,
-        brand:'GEORGE',
-        linkImage:'https://sk.basketzone.net/zdjecia/2021/05/01/105/03/NIKE_PG_5_BRED_PAUL_GEORGEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:59,
-        name:'NIKE PG DRI-FIT TEE WHITE',
-        typeName:'T-SHIRTS',
-        price:35,
-        priceDiscount:null,
-        brand:'GEORGE',
-        linkImage:'https://fr.kicksmaniac.com/zdjecia/2020/02/13/402/19/NIKE_PG_DRI_FIT_TEE_WHITEs-mini.jpg?mini',
-        type:2,
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:60,
-        name:'NIKE PG DRI-FIT PG BASKETBALL TEE BLACK',
-        typeName:'T-SHIRTS',
-        price:35,
-        priceDiscount:null,
-        brand:'GEORGE',
-        linkImage:'https://sk.basketzone.net/zdjecia/2019/11/23/1011/08/NIKE_DRI_FIT_PG_BASKETBALL_TEE_BLACKs-mini.jpg?mini',
-        type:2,
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:61,
-        name:'NIKE PG SMOKE DRY TEE BLACK',
-        typeName:'T-SHIRTS',
-        price:35,
-        priceDiscount:null,
-        brand:'GEORGE',
-        linkImage:'https://de.kicksmaniac.com/zdjecia/2019/04/15/1204/36/NIKE_PG_SMOKE_DRY_TEE_BLACKs-mini.jpg?mini',
-        type:2,
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:62,
-        name:'NIKE PG DRY TEE WHITE',
-        typeName:'T-SHIRTS',
-        price:30,
-        priceDiscount:25,
-        brand:'GEORGE',
-        linkImage:'https://sk.basketzone.net/zdjecia/2018/10/16/910/03/NIKE_PG_DRY_TEE_WHITEs-mini.jpg?mini',
-        type:2,
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-
-    {
-        id:63,
-        name:'NIKE PG SMOKE DRY TEE WHITE',
-        typeName:'T-SHIRTS',
-        price:35,
-        priceDiscount:null,
-        brand:'GEORGE',
-        linkImage:'https://de.kicksmaniac.com/zdjecia/2018/07/11/1007/00/NIKE_PG_DRY_TEE_BLACKs-mini.jpg?mini',
-        type:2,
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:64,
-        name:'NIKE KYRIE LOW 3 ORCHID',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:95,
-        brand:'KYRIE',
-        linkImage:'https://kicksmaniac.com/zdjecia/2020/12/16/312/24/NIKE_KYRIE_LOW_3_ORCHIDs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-
-    {
-        id:65,
-        name:'NIKE KYRIE 6 ASIA',
-        typeName:'BASKETBALL SHOES',
-        price:120,
-        priceDiscount:null,
-        brand:'KYRIE',
-        linkImage:'https://sk.basketzone.net/zdjecia/2020/07/04/307/38/NIKE_KYRIE_6_ASIA___COMING_SOONs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:66,
-        name:'NIKE KYRIE LOW 3 BROOKLYN NETS CLASSIC EDITION',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:null,
-        brand:'KYRIE',
-        linkImage:'https://fr.basketzone.net/zdjecia/2020/11/01/511/30/NIKE_KYRIE_LOW_3_BROOKLYN_NETS_CLASSIC_EDITIONs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:67,
-        name:'NIKE KYRIE FLYTRAP III BLACK METALLIC GOLD',
-        typeName:'BASKETBALL SHOES',
-        price:85,
-        priceDiscount:null,
-        brand:'KYRIE',
-        linkImage:'https://tr.basketzone.net/zdjecia/2020/07/22/507/09/NIKE_KYRIE_FLYTRAP_III_BLACK_METALLIC_GOLDs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:68,
-        name:'NIKE KYRIE 6 ALLSTAR TROPHIES',
-        typeName:'BASKETBALL SHOES',
-        price:145,
-        priceDiscount:null,
-        brand:'KYRIE',
-        linkImage:'https://hu.basketzone.net/zdjecia/2020/05/19/505/03/NIKE_KYRIE_6_ALLSTAR_TROPHIESs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:69,
-        name:'NIKE KYRIE FLYTRAP IV CRIMSON',
-        typeName:'BASKETBALL SHOES',
-        price:85,
-        priceDiscount:null,
-        brand:'KYRIE',
-        linkImage:'https://fr.kicksmaniac.com/zdjecia/2021/02/04/402/25/NIKE_KYRIE_FLYTRAP_IV_CRIMSONs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:70,
-        name:'NIKE NBA MIAMI HEAT JIMMY BULTER CITY EDITION SWINGMAN JERSEY LASER',
-        typeName:'T-SHIRTS',
-        price:95,
-        priceDiscount:null,
-        brand:'BUTLER',
-        linkImage:'https://se.basketzone.net/zdjecia/2021/05/11/205/27/NIKE_NBA_MIAMI_HEAT_JIMMY_BUTLER_CITY_EDITION_SWINGMAN_JERSEY_LASER_FUCHSIAs-mini.jpg?mini',
-        type:2,
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:71,
-        name:'NIKE NBA MINESOTA TIMBERWOLVES JIMMY BULTER SWINGMAN JERSEY ACTION',
-        typeName:'T-SHIRTS',
-        price:75,
-        priceDiscount:null,
-        brand:'BUTLER',
-        linkImage:'https://dk.basketzone.net/zdjecia/2018/09/18/809/42/NIKE_NBA_MINNESOTA_TIMBERWOLVES_JIMMY_BUTLER_SWINGMAN_JERSEY_ACTION_GREENs-mini.jpg?mini',
-        type:2,
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:72,
-        name:'NIKE NBA MINESOTA TIMBERWOLVES JIMMY BULTER ROAD SWINGMAN JERSEY ',
-        typeName:'T-SHIRTS',
-        price:75,
-        priceDiscount:null,
-        brand:'BUTLER',
-        linkImage:'https://ro.basketzone.net/zdjecia/2018/09/13/509/31/NIKE_NBA_MINNESOTA_TIMBERWOLVES_JIMMY_BUTLER_ROAD_SWINGMAN_JERSEY_COLLEGE_NAVYs-mini.jpg?mini',
-        type:2,
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:73,
-        name:'NIKE NBA MIAMA HEAT JIMMY BULTER STATEMENT EDITION SWINGMAN JERSEY TOUGH RED',
-        typeName:'T-SHIRTS',
-        price:85,
-        priceDiscount:null,
-        brand:'BUTLER',
-        linkImage:'https://hu.basketzone.net/zdjecia/2020/10/02/1110/33/NIKE_NBA_MIAMI_HEAT_JIMMY_BUTLER_STATEMENT_EDITION_SWINGMAN_JERSEY_TOUGH_REDs-mini.jpg?mini',
-        type:2,
-        sizeShoes:[
-            {
-                id:0,
-                size:'M',
-                check:false,
-            },
-            {
-                id:1,
-                size:'L',
-                check:false,
-            },
-            {
-                id:2,
-                size:'XL',
-                check:false,
-            },
-            {
-                id:3,
-                size:'XXL',
-                check:false,
-            },         
-        ]
-    },
-    {
-        id:74,
-        name:'NIKE AIR JORDAN ULTRA FLY 2 OREO JIMMY BULTER',
-        typeName:'BASKETBALL SHOES',
-        price:120,
-        priceDiscount:105,
-        brand:'BUTLER',
-        linkImage:'https://basketzone.net/zdjecia/2017/04/11/504/41/NIKE_AIR_JORDAN_ULTRA.FLY_2_OREOs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:75,
-        name:'NIKE AIR JORDAN ULTRA FLY 2 BRED REVERSE JIMMY BULTER',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:90,
-        brand:'BUTLER',
-        linkImage:'https://es.basketzone.net/zdjecia/2017/07/06/1107/55/NIKE_AIR_JORDAN_ULTRA.FLY_2_BRED_REVERSE_JIMMY_BUTLERs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:76,
-        name:'NIKE AIR JORDAN ULTRA FLY 2 PHOTO BLUE JIMMY BULTER',
-        typeName:'BASKETBALL SHOES',
-        price:120,
-        priceDiscount:110,
-        brand:'BUTLER',
-        linkImage:'https://dk.basketzone.net/zdjecia/2017/04/05/804/07/NIKE_AIR_JORDAN_ULTRA.FLY_2_PHOTO_BLUEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:77,
-        name:'NIKE AIR JORDAN ULTRA FLY 2 BRED JIMMY BULTER',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:85,
-        brand:'BUTLER',
-        linkImage:'https://basketzone.pl/zdjecia/2017/05/15/205/53/NIKE_AIR_JORDAN_ULTRA.FLY_2_BREDs-mini.jpg?minii',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:78,
-        name:'NIKE AIR JORDAN ULTRA FLY 2 HOME JIMMY BULTER',
-        typeName:'BASKETBALL SHOES',
-        price:120,
-        priceDiscount:110,
-        brand:'BUTLER',
-        linkImage:'https://tr.basketzone.net/zdjecia/2017/04/11/504/22/NIKE_AIR_JORDAN_ULTRA.FLY_2_HOMEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:79,
-        name:'NIKE AIR JORDAN ULTRA FLY JUMMY BULTER BLACK METALLIC HERMALITE',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:95,
-        brand:'BUTLER',
-        linkImage:'https://de.basketzone.net/zdjecia/2016/07/08/707/15/NIKE_AIR_JORDAN_ULTRA.FLY_JIMMY_BUTLER_BLACK_METALLIC_HERMALITEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:80,
-        name:'NIKE AIR JORDAN WESTBROOK ONE TAKE 2 MARBLE',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:null,
-        brand:'WESTBROOK',
-        linkImage:'https://sk.basketzone.net/zdjecia/2021/02/15/202/34/NIKE_AIR_JORDAN_WESTBROOK_ONE_TAKE_2_MARBLEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:81,
-        name:'NIKE AIR JORDAN WESTBROOK ONE TAKE BLACK VOLT',
-        typeName:'BASKETBALL SHOES',
-        price:95,
-        priceDiscount:null,
-        brand:'WESTBROOK',
-        linkImage:'https://nl.basketzone.net/zdjecia/2020/12/16/412/58/NIKE_AIR_JORDAN_WESTBROOK_ONE_TAKE_BLACK_VOLTs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:82,
-        name:'NIKE AIR JORDAN WHY NOT ZERO.4 THE FAMILY R.WESTBROOK',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:null,
-        brand:'WESTBROOK',
-        linkImage:'https://es.basketzone.net/zdjecia/2021/02/06/102/38/NIKE_AIR_JORDAN_WHY_NOT_ZER0.4_THE_FAMILY_R._WESTBROOKs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:83,
-        name:'NIKE AIR JORDAN WESTBROOK ONE TAKE QUAI 54',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:null,
-        brand:'WESTBROOK',
-        linkImage:'https://es.kicksmaniac.com/zdjecia/2020/10/12/310/56/NIKE_AIR_JORDAN_WESTBROOK_ONE_TAKE_QUAI_54s-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:84,
-        name:'NIKE AIR JORDAN WHY NOT ZERO 4 GRAFFITI R.WESTBROOK',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:null,
-        brand:'WESTBROOK',
-        linkImage:'https://fr.kicksmaniac.com/zdjecia/2021/02/10/102/25/NIKE_AIR_JORDAN_WHY_NOT_ZER0.4_GRAFFITI_R._WESTBROOKs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:85,
-        name:'NIKE AIR JORDAN WHY NOT ZERO 3 SE ATOMIC ORANGE R.WESTBROOK',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:null,
-        brand:'WESTBROOK',
-        linkImage:'https://de.kicksmaniac.com/zdjecia/2020/07/22/307/40/NIKE_AIR_JORDAN_WHY_NOT_ZER0.3_SE_ATOMIC_ORANGE_R._WESTBROOKs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:86,
-        name:'NIKE AIR JORDAN WHY NOT ZERO 3 HEARTBEAT R.WESTBROOK',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:null,
-        brand:'WESTBROOK',
-        linkImage:'https://sk.basketzone.net/zdjecia/2020/03/10/203/45/NIKE_AIR_JORDAN_WHY_NOT_ZER0.3_HEARTBEAT_R._WESTBROOKs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:87,
-        name:'NIKE AIR JORDAN WHY NOT ZERO 3 WASHED CORAL R.WESTBROOK',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:null,
-        brand:'WESTBROOK',
-        linkImage:'https://fr.kicksmaniac.com/zdjecia/2020/06/29/606/21/NIKE_AIR_JORDAN_WHY_NOT_ZER0.3_WASHED_CORAL_R._WESTBROOKs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:88,
-        name:'NIKE AIR JORDAN WHY NOT ZERO 3 SE FLASH CRIMSON R.WESTBROOK',
-        typeName:'BASKETBALL SHOES',
-        price:130,
-        priceDiscount:115,
-        brand:'WESTBROOK',
-        linkImage:'https://basketzone.net/zdjecia/2020/07/30/507/12/NIKE_AIR_JORDAN_WHY_NOT_ZER0.3_SE_FLASH_CRIMSON_R._WESTBROOKs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:89,
-        name:'NIKE AIR JORDAN R.WESTBROOK ONE TAKE 2 TROPICAL TWIST',
-        typeName:'BASKETBALL SHOES',
-        price:100,
-        priceDiscount:null,
-        brand:'WESTBROOK',
-        linkImage:'https://nl.basketzone.net/zdjecia/2021/05/01/1105/43/NIKE_AIR_JORDAN_WESTBROOK_ONE_TAKE_2_TROPICAL_TWISTs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:90,
-        name:'NIKE ZOOM FREAK 2 LETTER BRO GIANNIS ANTETOKOUMPO',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:100,
-        brand:'ANTETOKOUNMPO',
-        linkImage:'https://nl.kicksmaniac.com/zdjecia/2021/02/24/902/37/NIKE_ZOOM_FREAK_2_LETTER_BRO_GIANNIS_ANTETOKOUNMPOs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:91,
-        name:'NIKE ZOOM FREAK 2 ASHIKO GIANNIS ANTETOKOUMPO',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:100,
-        brand:'ANTETOKOUNMPO',
-        linkImage:'https://no.basketzone.net/zdjecia/2020/10/14/110/23/NIKE_ZOOM_FREAK_2_ASHIKOs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:92,
-        name:'NIKE ZOOM FREAK 1 ATMOSPHERE GREY',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:100,
-        brand:'ANTETOKOUNMPO',
-        linkImage:'https://it.kicksmaniac.com/zdjecia/2019/11/20/511/42/NIKE_ZOOM_FREAK_1_ATMOSPHERE_GREYs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:93,
-        name:'NIKE ZOOM FREAK 2 TAXI GIANNIS ANTETOKOUMPO',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:null,
-        brand:'ANTETOKOUNMPO',
-        linkImage:'https://cz.basketzone.net/zdjecia/2021/02/15/202/38/NIKE_ZOOM_FREAK_2_TAXI_GIANNIS_ANTETOKOUNMPOs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:94,
-        name:'NIKE ZOOM FREAK 1 ROSES GIANNIS ANTETOKOUMPO',
-        typeName:'BASKETBALL SHOES',
-        price:120,
-        priceDiscount:null,
-        brand:'ANTETOKOUNMPO',
-        linkImage:'https://fr.basketzone.net/zdjecia/2019/09/02/1209/11/NIKE_ZOOM_FREAK_1_ROSESs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:95,
-        name:'NIKE ZOOM FREAK 2 BRED GIANNIS ANTETOKOUMPO',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:null,
-        brand:'ANTETOKOUNMPO',
-        linkImage:'https://sk.basketzone.net/zdjecia/2021/01/25/201/06/NIKE_ZOOM_FREAK_2_BRED_GIANNIS_ANTETOKOUNMPOs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
- 
-    {
-        id:96,
-        name:'NIKE ZOOM FREAK 2 WHITE CEMENT GIANNIS ANTETOKOUMPO',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:null,
-        brand:'ANTETOKOUNMPO',
-        linkImage:'https://fr.kicksmaniac.com/zdjecia/2020/09/22/1209/17/NIKE_ZOOM_FREAK_2_WHITE_CEMENTs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:97,
-        name:'NIKE ZOOM FREAK 1 ROOTS GIANNIS ANTETOKOUMPO',
-        typeName:'BASKETBALL SHOES',
-        price:110,
-        priceDiscount:null,
-        brand:'ANTETOKOUNMPO',
-        linkImage:'https://cz.basketzone.net/zdjecia/2020/02/03/502/08/NIKE_ZOOM_FREAK_1_ROOTSs-mini.jpg?minii',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:98,
-        name:'NIKE KOBE MAMBA FURY LAKERS AWAY',
-        typeName:'BASKETBALL SHOES',
-        price:120,
-        priceDiscount:110,
-        brand:'BRYANT',
-        linkImage:'https://it.basketzone.net/zdjecia/2020/07/31/1207/18/NIKE_KOBE_MAMBA_FURY_LAKERS_AWAYs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:99,
-        name:'NIKE KOBE MAMBA FURY LAKERS HOME',
-        typeName:'BASKETBALL SHOES',
-        price:120,
-        priceDiscount:null,
-        brand:'BRYANT',
-        linkImage:'https://basketzone.pl/zdjecia/2020/07/31/207/34/NIKE_KOBE_MAMBA_FURY_LAKERS_HOMEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:100,
-        name:'NIKE KOBE MAMBA FURY BLACK MAMBA',
-        typeName:'BASKETBALL SHOES',
-        price:120,
-        priceDiscount:null,
-        brand:'BRYANT',
-        linkImage:'https://no.basketzone.net/zdjecia/2020/06/24/106/11/NIKE_KOBE_MAMBA_FURY_BLACK_MAMBAs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:101,
-        name:'NIKE KOBE MAMBA FURY WHITE WOLF GREY',
-        typeName:'BASKETBALL SHOES',
-        price:120,
-        priceDiscount:null,
-        brand:'BRYANT',
-        linkImage:'https://cz.basketzone.net/zdjecia/2020/06/03/506/29/NIKE_KOBE_MAMBA_FURY_WHITE_WOLF_GREYs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:102,
-        name:'NIKE KOBE A.D. 12 MID HENESIS BLACK GUM LIGHT BROWN',
-        typeName:'BASKETBALL SHOES',
-        price:150,
-        priceDiscount:null,
-        brand:'BRYANT',
-        linkImage:'https://es.kicksmaniac.com/zdjecia/2017/11/02/511/26/NIKE_KOBE_12_A.D._MID_GENESIS_BLACK_GUM_LIGHT_BROWNs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:103,
-        name:'NIKE KOBE MAMBA FOCUS LAKERS',
-        typeName:'BASKETBALL SHOES',
-        price:105,
-        priceDiscount:null,
-        brand:'BRYANT',
-        linkImage:'https://ro.basketzone.net/zdjecia/2019/10/30/1110/07/NIKE_KOBE_MAMBA_FOCUS_LAKERSs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:104,
-        name:'NIKE KOBE MAMBA FOCUS METALLIC GOLD',
-        typeName:'BASKETBALL SHOES',
-        price:155,
-        priceDiscount:null,
-        brand:'BRYANT',
-        linkImage:'https://dk.basketzone.net/zdjecia/2019/07/04/1107/58/NIKE_KOBE_MAMBA_FOCUS_METALLIC_GOLDs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:105,
-        name:'NIKE KOBE A.D. 12 GENESIS GREY SNAKE',
-        typeName:'BASKETBALL SHOES',
-        price:150,
-        priceDiscount:null,
-        brand:'BRYANT',
-        linkImage:'https://nl.basketzone.net/zdjecia/2017/11/17/511/39/NIKE_KOBE_A.D._GENESIS_GREY_SNAKEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:106,
-        name:'NIKE KOBE AD NXT FF VAST GREY',
-        typeName:'BASKETBALL SHOES',
-        price:220,
-        priceDiscount:null,
-        brand:'BRYANT',
-        linkImage:'https://es.kicksmaniac.com/zdjecia/2019/10/15/1110/54/NIKE_KOBE_AD_NXT_FF_VAST_GREYs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:107,
-        name:'NIKE KOBE A.D. 12 MID GENESIS WHITE PURPLE',
-        typeName:'BASKETBALL SHOES',
-        price:150,
-        priceDiscount:null,
-        brand:'BRYANT',
-        linkImage:'https://cz.basketzone.net/zdjecia/2017/10/13/810/49/NIKE_KOBE_12_A.D._GENESIS_WHITEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:108,
-        name:'NIKE ZOOM KD 13 EYBL',
-        typeName:'BASKETBALL SHOES',
-        price:145,
-        priceDiscount:null,
-        brand:'KD',
-        linkImage:'https://dk.basketzone.net/zdjecia/2020/09/30/509/03/NIKE_ZOOM_KD_13_EYBLs-mini.jpg?minii',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:109,
-        name:'NIKE ZOOM KD 13 USA OLYMPIC TEAM',
-        typeName:'BASKETBALL SHOES',
-        price:145,
-        priceDiscount:null,
-        brand:'KD',
-        linkImage:'https://nl.basketzone.net/zdjecia/2020/09/10/109/38/NIKE_ZOOM_KD_13_USA_OLYMPIC_TEAMs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:110,
-        name:'NIKE ZOOM KD 13 BRED',
-        typeName:'BASKETBALL SHOES',
-        price:120,
-        priceDiscount:null,
-        brand:'KD',
-        linkImage:'https://nl.basketzone.net/zdjecia/2020/09/04/309/23/NIKE_ZOOM_KD_13_BREDs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:111,
-        name:'NIKE ZOOM KD 13 OREO',
-        typeName:'BASKETBALL SHOES',
-        price:145,
-        priceDiscount:null,
-        brand:'KD',
-        linkImage:'https://nl.basketzone.net/zdjecia/2020/09/04/1209/45/NIKE_ZOOM_KD_13_OREOs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:112,
-        name:'NIKE KD TREY 5 VIII BLACK ILLUSION GREEN',
-        typeName:'BASKETBALL SHOES',
-        price:95,
-        priceDiscount:null,
-        brand:'KD',
-        linkImage:'https://basketzone.pl/zdjecia/2020/10/05/110/34/NIKE_KD_TREY_5_VIII_BLACK_ILLUSION_GREENs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:113,
-        name:'NIKE KD TREY 5 VIII BLUE VOID',
-        typeName:'BASKETBALL SHOES',
-        price:95,
-        priceDiscount:null,
-        brand:'KD',
-        linkImage:'https://no.basketzone.net/zdjecia/2020/07/31/207/41/NIKE_KD_TREY_5_VIII_BLUE_VOIDs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
-    {
-        id:114,
-        name:'NIKE KD FULL COURT 8P AMBER',
-        typeName:'BALLS',
-        price:45,
-        priceDiscount:null,
-        brand:'KD',
-        linkImage:'https://no.basketzone.net/zdjecia/2019/09/12/909/40/NIKE_KD_FULL_COURT_8P_AMBERs-mini.jpg?mini',
-        type:2,
-        sizeShoes:[
-            {
-                id:0,
-                size:6,
-                check:false,
-            },
-            {
-                id:1,
-                size:7,
-                check:false,
-            }
-         
-
-        ]
-    },
-    {
-        id:115,
-        name:'NIKE ZOOM FREAK 1 GREECE GIANNIS ANTETOKOUMPO',
-        typeName:'BASKETBALL SHOES',
-        price:120,
-        priceDiscount:null,
-        brand:'ANTETOKOUNMPO',
-        linkImage:'https://es.kicksmaniac.com/zdjecia/2019/10/03/310/06/NIKE_ZOOM_FREAK_1_GREECEs-mini.jpg?mini',
-        type:1,
-        sizeShoes:[
-            {
-                id:0,
-                size:39,
-                check:false,
-            },
-            {
-                id:1,
-                size:40,
-                check:false,
-            },
-            {
-                id:2,
-                size:41,
-                check:false,
-            },
-            {
-                id:3,
-                size:42,
-                check:false,
-            },
-            {
-                id:4,
-                size:43,
-                check:false,
-            },
-
-        ]
-    },
+import player1 from './Assets/Images/Player/koszykarze_1.png';
+import player2 from './Assets/Images/Player/koszykarze_2.png';
+import player3 from './Assets/Images/Player/koszykarze_3.png';
+import player4 from './Assets/Images/Player/koszykarze_4.png';
+import player5 from './Assets/Images/Player/koszykarze_5.png';
+import player6 from './Assets/Images/Player/koszykarze_6.png';
+import player7 from './Assets/Images/Player/koszykarze_11.png';
+import player8 from './Assets/Images/Player/koszykarze_10.png';
+import player9 from './Assets/Images/Player/koszykarze_9.png';
+import player10 from './Assets/Images/Player/koszykarze_8.png';
+
+import kd1 from './Assets/Images/Shoes/kd1.jpg';
+import kd2 from './Assets/Images/Shoes/kd2.jpg';
+import kd3 from './Assets/Images/Shoes/kd3.jpg';
+import kd4 from './Assets/Images/Shoes/kd4.jpg';
+
+import kr1 from './Assets/Images/Shoes/kr1.jpg';
+import kr2 from './Assets/Images/Shoes/kr2.jpg';
+import kr3 from './Assets/Images/Shoes/kr3.jpg';
+import kr4 from './Assets/Images/Shoes/kr4.jpg';
+
+import lb1 from './Assets/Images/Shoes/lb1.jpg';
+import lb2 from './Assets/Images/Shoes/lb2.jpg';
+import lb3 from './Assets/Images/Shoes/lb3.jpg';
+import lb4 from './Assets/Images/Shoes/lb4.jpg';
+import lb5 from './Assets/Images/Shoes/lb5.jpg';
+
+import ajd1 from './Assets/Images/Shoes/ajd1.jpg';
+import ajd2 from './Assets/Images/Shoes/ajd2.jpg';
+import ajd3 from './Assets/Images/Shoes/ajd3.jpg';
+
+import krl1 from './Assets/Images/Shoes/krl1.jpg';
+import krl2 from './Assets/Images/Shoes/krl2.jpg';
+import krl3 from './Assets/Images/Shoes/krl3.png';
+import krl4 from './Assets/Images/Shoes/krl4.jpg';
+
+import lb171 from './Assets/Images/Shoes/lb171.jpg';
+import lb172 from './Assets/Images/Shoes/lb172.jpg';
+import lb173 from './Assets/Images/Shoes/lb173.jpg';
+import lb174 from './Assets/Images/Shoes/lb174.jpg';
+
+import ajdm1 from './Assets/Images/Shoes/ajdm1.jpg';
+import ajdm2 from './Assets/Images/Shoes/ajdm2.jpg';
+import ajdm3 from './Assets/Images/Shoes/ajdm3.jpg';
+import ajdm4 from './Assets/Images/Shoes/ajdm4.jpg';
+
+import ajdma1 from './Assets/Images/Shoes/ajdma1.jpg';
+import ajdma2 from './Assets/Images/Shoes/ajdma2.jpg';
+import ajdma3 from './Assets/Images/Shoes/ajdma3.jpg';
+import ajdma4 from './Assets/Images/Shoes/ajdma4.jpg';
+
+import ajm1 from './Assets/Images/Shoes/ajm1.jpg';
+import krf1 from './Assets/Images/Shoes/krf1.jpg';
+import sb1 from './Assets/Images/Shoes/sb1.jpg';
+import sr from './Assets/Images/Shoes/sr.jpg';
+import shortlk1 from './Assets/Images/Shoes/shortlk1.jpg';
+import kr61 from './Assets/Images/Shoes/kr61.jpg';
+import shirtgi1 from './Assets/Images/Shoes/shirtgi1.jpg';
+import socks1 from './Assets/Images/Shoes/socks1.jpg';
+import socksblack1 from './Assets/Images/Shoes/socksblack1.jpg';
+import socksblack2 from './Assets/Images/Shoes/socksblack2.jpg';
+import sockswhite1 from './Assets/Images/Shoes/sockswhite1.jpg';
+import socksred1 from './Assets/Images/Shoes/socksred1.jpg';
+import shirtdurant1 from './Assets/Images/Shoes/shirtdurant1.jpg';
+import nair1 from './Assets/Images/Shoes/nair1.jpg';
+import airsky1 from './Assets/Images/Shoes/airsky1.jpg';
+import airsky2 from './Assets/Images/Shoes/airsky2.jpg';
+import airmax1 from './Assets/Images/Shoes/airmax1.jpg';
+import nw1 from './Assets/Images/Shoes/nw1.jpg';
+import bur1 from './Assets/Images/Shoes/bur1.jpg';
+import ad1 from './Assets/Images/Shoes/ad1.jpg';
+import ba1 from './Assets/Images/Shoes/ba1.jpg';
+import b1 from './Assets/Images/Shoes/b1.jpg';
+import w1 from './Assets/Images/Shoes/w1.jpg';
+import g1 from './Assets/Images/Shoes/g1.png';
+import l1 from './Assets/Images/Shoes/l1.jpg';
+import l2 from './Assets/Images/Shoes/l2.jpg';
+
+import z1 from './Assets/Images/Shoes/z1.jpg';
+import b2 from './Assets/Images/Shoes/b2.jpg';
+import n43 from './Assets/Images/Shoes/n43.jpg';
+import n42 from './Assets/Images/Shoes/n42.jpg';
+import n33 from './Assets/Images/Shoes/n33.jpg';
+import n41 from './Assets/Images/Shoes/n41.jpg';
+
+import n40 from './Assets/Images/Shoes/n40.jpg';
+import n39 from './Assets/Images/Shoes/n42.jpg';
+import n38 from './Assets/Images/Shoes/n38.jpg';
+import n37 from './Assets/Images/Shoes/n37.jpg';
+import n36 from './Assets/Images/Shoes/n36.jpg';
+import n35 from './Assets/Images/Shoes/n35.jpg';
+import n34 from './Assets/Images/Shoes/n34.jpg';
+import n1 from './Assets/Images/Shoes/n1.jpg';
+import n2 from './Assets/Images/Shoes/n2.jpg';
+import n3 from './Assets/Images/Shoes/n3.jpg';
+import n4 from './Assets/Images/Shoes/n4.jpg';
+import n5 from './Assets/Images/Shoes/n5.jpg';
+import n6 from './Assets/Images/Shoes/n6.jpg';
+import n7 from './Assets/Images/Shoes/n7.jpg';
+import n8 from './Assets/Images/Shoes/n8.jpg';
+import n9 from './Assets/Images/Shoes/n9.jpg';
+import n10 from './Assets/Images/Shoes/n10.jpg';
+import n11 from './Assets/Images/Shoes/n11.jpg';
+import n12 from './Assets/Images/Shoes/n12.jpg';
+import n13 from './Assets/Images/Shoes/n13.jpg';
+import n14 from './Assets/Images/Shoes/n14.jpg';
+import n15 from './Assets/Images/Shoes/n15.jpg';
+import n16 from './Assets/Images/Shoes/n16.jpg';
+import n17 from './Assets/Images/Shoes/n17.jpg';
+import n18 from './Assets/Images/Shoes/n18.jpg';
+import n19 from './Assets/Images/Shoes/n19.jpg';
+import n20 from './Assets/Images/Shoes/n20.jpg';
+import n21 from './Assets/Images/Shoes/n21.jpg';
+import n22 from './Assets/Images/Shoes/n22.jpg';
+import n23 from './Assets/Images/Shoes/n23.jpg';
+import n24 from './Assets/Images/Shoes/n24.jpg';
+import n25 from './Assets/Images/Shoes/n25.jpg';
+import n26 from './Assets/Images/Shoes/n26.jpg';
+import n27 from './Assets/Images/Shoes/n27.jpg';
+import n28 from './Assets/Images/Shoes/n28.jpg';
+import n29 from './Assets/Images/Shoes/n29.jpg';
+import n30 from './Assets/Images/Shoes/n30.jpg';
+import n31 from './Assets/Images/Shoes/n31.jpg';
+import n32 from './Assets/Images/Shoes/n32.jpg';
+
+import k1 from './Assets/Images/Shoes/k1.jpg';
+import k2 from './Assets/Images/Shoes/k2.jpg';
+import k3 from './Assets/Images/Shoes/k3.jpg';
+import k4 from './Assets/Images/Shoes/k4.jpg';
+import k5 from './Assets/Images/Shoes/k5.jpg';
+
+import p1 from './Assets/Images/Shoes/p1.jpg';
+import p2 from './Assets/Images/Shoes/p2.png';
+import p3 from './Assets/Images/Shoes/p3.jpg';
+import p4 from './Assets/Images/Shoes/p4.jpg';
+import p5 from './Assets/Images/Shoes/p5.jpg';
+import p6 from './Assets/Images/Shoes/p6.jpg';
+import p7 from './Assets/Images/Shoes/p7.jpg';
+import p8 from './Assets/Images/Shoes/p8.jpg';
+import p9 from './Assets/Images/Shoes/p9.jpg';
+import p10 from './Assets/Images/Shoes/p10.jpg';
+import p11 from './Assets/Images/Shoes/p11.jpg';
+import p12 from './Assets/Images/Shoes/p12.jpg';
+import p13 from './Assets/Images/Shoes/p13.jpg';
+import p14 from './Assets/Images/Shoes/p14.jpg';
+import p15 from './Assets/Images/Shoes/p15.jpg';
+import p16 from './Assets/Images/Shoes/p16.png';
+
+import l3 from './Assets/Images/Shoes/l3.jpg';
+import l4 from './Assets/Images/Shoes/l4.jpg';
+import l5 from './Assets/Images/Shoes/l5.jpg';
+
+import j1 from './Assets/Images/Shoes/j1.jpg';
+import j2 from './Assets/Images/Shoes/j2.jpg';
+import j3 from './Assets/Images/Shoes/j3.jpg';
+import j4 from './Assets/Images/Shoes/j4.jpg';
+import j5 from './Assets/Images/Shoes/j5.jpg';
+import j6 from './Assets/Images/Shoes/j6.jpg';
+import j7 from './Assets/Images/Shoes/j7.jpg';
+import j8 from './Assets/Images/Shoes/j8.jpg';
+import j9 from './Assets/Images/Shoes/j9.jpg';
+import j10 from './Assets/Images/Shoes/j10.jpg';
+import k10 from './Assets/Images/Shoes/k10.jpg';
+
+// import { SignalCellular1Bar } from '@material-ui/icons';
+
+export const dataProduct = [
+  {
+    id: 0,
+    name: 'NIKE ZOOM KD 12 UNIVERSITY RED',
+    typeName: 'BASKETBALL SHOES',
+    price: 140,
+    priceDiscount: 130,
+    brand: 'KD',
+    linkImage: kd1,
+    type: 1,
+    imageDetail: [
+      {
+        id: 0,
+        linkImage: kd2,
+        check: true,
+      },
+      {
+        id: 1,
+        linkImage: kd3,
+        check: false,
+      },
+      {
+        id: 2,
+        linkImage: kd4,
+        check: false,
+      },
+    ],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 1,
+    name: 'NIKE KYRIE FLYTRAP III SOUTH BEACH',
+    typeName: 'BASKETBALL SHOES',
+    price: 100,
+    priceDiscount: null,
+    brand: 'KYRIE',
+    linkImage: kr1,
+    type: 1,
+    imageDetail: [
+      {
+        id: 0,
+        linkImage: kr2,
+        check: true,
+      },
+      {
+        id: 1,
+        linkImage: kr3,
+        check: false,
+      },
+      {
+        id: 2,
+        linkImage: kr4,
+        check: false,
+      },
+    ],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: 'NIKE LEBRON 18 MULTICOLOR',
+    typeName: 'BASKETBALL SHOES',
+    price: 100,
+    priceDiscount: null,
+    brand: 'LEBRON',
+    linkImage: lb1,
+    type: 1,
+    imageDetail: [
+      {
+        id: 0,
+        linkImage: lb2,
+        check: true,
+      },
+      {
+        id: 1,
+        linkImage: lb3,
+        check: false,
+      },
+      {
+        id: 2,
+        linkImage: lb4,
+        check: false,
+      },
+      {
+        id: 3,
+        linkImage: lb5,
+        check: false,
+      },
+    ],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: 'NIKE AIR JORDAN 3 RETRO CHLOROPHYLL TINKER',
+    typeName: 'BASKETBALL SHOES',
+    price: 220,
+    priceDiscount: null,
+    brand: 'JORDAN',
+    linkImage: ajd1,
+    type: 1,
+    imageDetail: [
+      {
+        id: 0,
+        linkImage: ajd2,
+        check: true,
+      },
+      {
+        id: 1,
+        linkImage: ajd3,
+        check: false,
+      },
+    ],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: 'NIKE KYRIE LOW 3 TIE DYE',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: null,
+    brand: 'KYRIE',
+    linkImage: krl1,
+    type: 1,
+    imageDetail: [
+      {
+        id: 0,
+        linkImage: krl2,
+        check: true,
+      },
+      {
+        id: 1,
+        linkImage: krl3,
+        check: false,
+      },
+      {
+        id: 2,
+        linkImage: krl4,
+        check: false,
+      },
+    ],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: 'NIKE LEBRON 17 LOW GLOW IN THE DARK',
+    typeName: 'BASKETBALL SHOES',
+    price: 150,
+    priceDiscount: null,
+    brand: 'LEBRON',
+    linkImage: lb171,
+    type: 1,
+    imageDetail: [
+      {
+        id: 0,
+        linkImage: lb172,
+        check: true,
+      },
+      {
+        id: 1,
+        linkImage: lb173,
+        check: false,
+      },
+      {
+        id: 2,
+        linkImage: lb174,
+        check: false,
+      },
+    ],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: 'NIKE AIR JORDAN MAX AURA 2 COOL GREY',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: null,
+    brand: 'JORDAN',
+    linkImage: ajdm1,
+    type: 1,
+    imageDetail: [
+      {
+        id: 0,
+        linkImage: ajdm2,
+        check: true,
+      },
+      {
+        id: 1,
+        linkImage: ajdm3,
+        check: false,
+      },
+      {
+        id: 2,
+        linkImage: ajdm4,
+        check: false,
+      },
+    ],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: 'NIKE AIR JORDAN MAX AURA 2 BRED',
+    price: 150,
+    typeName: 'BASKETBALL SHOES',
+    priceDiscount: null,
+    brand: 'JORDAN',
+    linkImage: ajdma1,
+    type: 1,
+    imageDetail: [
+      {
+        id: 0,
+        linkImage: ajdma2,
+        check: true,
+      },
+      {
+        id: 1,
+        linkImage: ajdma3,
+        check: false,
+      },
+      {
+        id: 2,
+        linkImage: ajdma4,
+        check: false,
+      },
+    ],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: 'NIKE AIR JORDAN 1 RETRO MID UNION BLACK TOE',
+    typeName: 'BASKETBALL SHOES',
+    price: 220,
+    priceDiscount: null,
+    brand: 'JORDAN',
+    linkImage: ajm1,
+    type: 1,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 9,
+    name: 'NIKE KYRIE FLYTRAP II DUKE BLUE DEVILS',
+    typeName: 'BASKETBALL SHOES',
+    price: 95,
+    priceDiscount: 80,
+    brand: 'KYRIE',
+    linkImage: krf1,
+    type: 1,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 10,
+    name: 'NIKE ZOOM KD 13 NETS HARDWOOD CLASSICS',
+    typeName: 'BASKETBALL SHOES',
+    price: 145,
+    priceDiscount: null,
+    brand: 'KD',
+    linkImage: k10,
+    type: 1,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 11,
+    name: 'NIKE KYRIE 6 USA OLYMPIC TEAM',
+    typeName: 'BASKETBALL SHOES',
+    price: 120,
+    priceDiscount: 110,
+    brand: 'KYRIE',
+    linkImage: kr61,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 12,
+    name: 'NIKE AIR JORDAN SPORTSWEAR WINGS FLEECE HOODIE BLACK',
+    typeName: 'HOODIES',
+    price: 80,
+    priceDiscount: 65,
+    brand: 'JORDAN',
+    linkImage: sb1,
+    type: 2,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 13,
+    name: 'NIKE AIR JORDAN SPORTSWEAR JUMPMAN AIR EMBROIERED TEE GUM RED',
+    typeName: 'T-SHIRTS',
+    price: 30,
+    priceDiscount: null,
+    brand: 'JORDAN',
+    linkImage: sr,
+    type: 2,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 14,
+    name: 'NIKE NBA LOS ANGELES LAKERS PRACTICE SHORTS FIELD PURPLE',
+    typeName: 'T-SHORTS',
+    price: 45,
+    priceDiscount: null,
+    brand: 'LEBRON',
+    linkImage: shortlk1,
+    type: 2,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 15,
+    name: 'NIKE NBA MILWAUKEE BUCKS GIANNIS ANTETOKOUNMPO SWINGMAN JERSEY SUNDIAL',
+    typeName: 'T-SHIRTS',
+    price: 80,
+    priceDiscount: 75,
+    brand: 'ANTETOKOUNMPO',
+    linkImage: shirtgi1,
+    type: 2,
+    imageDetail: [
+      {
+        id: 0,
+        linkImage: shirtgi1,
+        check: true,
+      },
+    ],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 16,
+    name: 'NIKE JORDAN DRI-FIT NO-SHOW 3PK SOCKS',
+    typeName: 'CLOTHING',
+    price: 15,
+    priceDiscount: null,
+    brand: 'JORDAN',
+    linkImage: socks1,
+    type: 2,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 17,
+    name: 'NIKE AIR JORDAN EVERYDAY WATERFALL SOCKS BLACK',
+    typeName: 'CLOTHING',
+    price: 15,
+    priceDiscount: null,
+    brand: 'JORDAN',
+    linkImage: socksblack1,
+    type: 2,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 18,
+    name: 'NIKE AIR JORDAN EVERYDAY WATERFALL SOCKS WHITE',
+    typeName: 'CLOTHING',
+    price: 15,
+    priceDiscount: null,
+    brand: 'JORDAN',
+    linkImage: sockswhite1,
+    type: 2,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 19,
+    name: 'NIKE AIR JORDAN JUMPMAN NO-SHOW SOCKS BLACK',
+    typeName: 'CLOTHING',
+    price: 15,
+    priceDiscount: null,
+    brand: 'JORDAN',
+    linkImage: socksblack2,
+    type: 2,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 20,
+    name: 'NIKE AIR JORDAN JUMPMAN NO-SHOW SOCKS BLACK WHITE GYM RED',
+    typeName: 'CLOTHING',
+    price: 15,
+    priceDiscount: null,
+    brand: 'JORDAN',
+    linkImage: socksred1,
+    type: 2,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 21,
+    name: 'NIKE NBA GOLDEN STATE WARRIOS KEVIN DURANT SWINGMAN JERSEY ROAD',
+    typeName: 'T-SHIRTS',
+    price: 75,
+    priceDiscount: 65,
+    brand: 'KD',
+    linkImage: shirtdurant1,
+    type: 2,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 22,
+    name: 'NIKE AIR MAX 90 ESSENTIAL ALL BLACK',
+    typeName: 'SPORTS SHOES',
+    price: 130,
+    priceDiscount: 120,
+    brand: 'AIR',
+    linkImage: nair1,
+    type: 3,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 23,
+    name: 'NIKE AIR SKYLON II NAVY',
+    typeName: 'SPORTS SHOES',
+    price: 95,
+    priceDiscount: 75,
+    brand: 'AIR',
+    linkImage: airsky1,
+    type: 3,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 24,
+    name: 'NIKE AIR MAX 90 ESSENTIAL WOLF GREY',
+    typeName: 'SPORTS SHOES',
+    price: 130,
+    priceDiscount: null,
+    brand: 'AIR',
+    linkImage: airmax1,
+    type: 3,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 25,
+    name: 'NIKE AIR SKYLON II WHITE ORANGE BLUE',
+    typeName: 'SPORTS SHOES',
+    price: 95,
+    priceDiscount: 80,
+    brand: 'AIR',
+    linkImage: airsky2,
+    type: 3,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 26,
+    name: 'NIKE GRANDSTAND II WHITE',
+    typeName: 'SPORTS SHOES',
+    price: 80,
+    priceDiscount: 65,
+    brand: 'AIR',
+    linkImage: nw1,
+    type: 3,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 27,
+    name: 'NEW BALANCE X-90 BURGUNDY',
+    typeName: 'SPORTS SHOES',
+    price: 110,
+    priceDiscount: 95,
+    brand: 'BALANCE',
+    linkImage: bur1,
+    type: 3,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 28,
+    name: 'ADIDAS TUBULAR SHADOW',
+    typeName: 'SPORTS SHOES',
+    price: 90,
+    priceDiscount: null,
+    brand: 'ADIDAS',
+    linkImage: ad1,
+    type: 3,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 29,
+    name: 'NEW BALANCE 574 BURGUNDY',
+    typeName: 'SPORTS SHOES',
+    price: 80,
+    priceDiscount: 65,
+    brand: 'BALANCE',
+    linkImage: ba1,
+    type: 3,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 30,
+    name: 'NEW BALANCE 373 BLACK',
+    typeName: 'SPORTS SHOES',
+    price: 65,
+    priceDiscount: null,
+    brand: 'BALANCE',
+    linkImage: b1,
+    type: 3,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 31,
+    name: 'NIKE AIR MAX 90 ESSENTIAL TRIPLE WHITE',
+    typeName: 'SPORTS SHOES',
+    price: 130,
+    priceDiscount: 120,
+    brand: 'BALANCE',
+    linkImage: w1,
+    type: 3,
+    imageDetail: [],
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 32,
+    name: 'NIKE LEBRON WITNESS V VOLT',
+    typeName: 'BASKETBALL SHOES',
+    price: 95,
+    priceDiscount: 85,
+    brand: 'LEBRON',
+    linkImage: g1,
+    type: 1,
+  },
+  {
+    id: 33,
+    name: 'NIKE LEBRON WITNESS IV LAKERS',
+    typeName: 'BASKETBALL SHOES',
+    price: 95,
+    priceDiscount: null,
+    brand: 'LEBRON',
+    linkImage: l1,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 34,
+    name: 'NIKE LEBRON 17 LOW PARTICLE GREY',
+    typeName: 'BASKETBALL SHOES',
+    price: 150,
+    priceDiscount: 130,
+    brand: 'LEBRON',
+    linkImage: l2,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 35,
+    name: 'NIKE LEBRON 17 LOW TITAN',
+    typeName: 'BASKETBALL SHOES',
+    price: 150,
+    priceDiscount: null,
+    brand: 'LEBRON',
+    linkImage:
+      'https://ro.basketzone.net/zdjecia/2020/11/08/611/20/NIKE_LEBRON_17_LOW_TITANs-mini.jpg?mini',
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 36,
+    name: 'NIKE LEBRON WITNESS V OREO',
+    typeName: 'BASKETBALL SHOES',
+    price: 95,
+    priceDiscount: null,
+    brand: 'LEBRON',
+    linkImage: l3,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 37,
+    name: 'NIKE LEBRON WITNESS V BLACK LIGHT BLUE FURY',
+    typeName: 'BASKETBALL SHOES',
+    price: 95,
+    priceDiscount: null,
+    brand: 'LEBRON',
+    linkImage: l4,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 38,
+    name: 'NIKE NBA LOS ANGELES LAKERS LEBRON JAMES ASSOCIATION EDITION SWINGMAN JERSEY',
+    typeName: 'T-SHIRTS',
+    price: 85,
+    priceDiscount: null,
+    brand: 'LEBRON',
+    linkImage: l5,
+    type: 2,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 39,
+    name: 'NIKE AIR JORDAN SUPER.FLY 5 PO RED BLAKE GRIFFIN',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: 110,
+    brand: 'GRIFFIN',
+    linkImage: j1,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 40,
+    name: 'NIKE AIR JORDAN SUPER.FLY 5 PO BLUE BLAKE GRIFFIN',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: 110,
+    brand: 'GRIFFIN',
+    linkImage: j2,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 41,
+    name: 'NIKE AIR JORDAN SUPER.FLY 5 PO BRED BLAKE GRIFFIN',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: 110,
+    brand: 'GRIFFIN',
+    linkImage: j3,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 42,
+    name: 'NIKE AIR JORDAN SUPER.FLY 5 PO WHITE BLAKE GRIFFIN',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: 105,
+    brand: 'GRIFFIN',
+    linkImage: j4,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 43,
+    name: 'NIKE AIR JORDAN SUPER.FLY 5 PO BULLS ALTERNATE BLAKE GRIFFIN',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: 110,
+    brand: 'GRIFFIN',
+    linkImage: j5,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 44,
+    name: 'NIKE AIR JORDAN SUPER.FLY 4 RED JACQUARD BLAKE GRIFFIN',
+    typeName: 'BASKETBALL SHOES',
+    price: 145,
+    priceDiscount: 110,
+    brand: 'GRIFFIN',
+    linkImage: j6,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 45,
+    name: 'NIKE AIR JORDAN SUPER.FLY 4 PO "RIO TEAL" BLAKE GRIFFIN',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: 95,
+    brand: 'GRIFFIN',
+    linkImage: j7,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 46,
+    name: 'NIKE AIR JORDAN SUPER.FLY 5 PO BLACK METTALIC GOLD BLAKE GRIFFIN',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: 115,
+    brand: 'GRIFFIN',
+    linkImage: j8,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 47,
+    name: 'NIKE AIR JORDAN SUPER.FLY 5 PO NAVY BLUE LIME BLAKE GRIFFIN',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: 110,
+    brand: 'GRIFFIN',
+    linkImage: j9,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 48,
+    name: 'NIKE AIR JORDAN SUPER.FLY 5 PO CONTRAST BLAKE GRIFFIN',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: 100,
+    brand: 'GRIFFIN',
+    linkImage: j10,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 49,
+    name: 'NIKE PG 5 LA DRIP PAUL GEORGE',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: null,
+    brand: 'GEORGE',
+    linkImage: p1,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 50,
+    name: 'NIKE PG 5 DIGI CAMO PAUL GEORGE',
+    typeName: 'BASKETBALL SHOES',
+    price: 120,
+    priceDiscount: null,
+    brand: 'GEORGE',
+    linkImage: p2,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 51,
+    name: 'NIKE PG 5 WHITE MULTICOLOR PAUL GEORGE',
+    typeName: 'BASKETBALL SHOES',
+    price: 100,
+    priceDiscount: null,
+    brand: 'GEORGE',
+    linkImage: p3,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 52,
+    name: 'NIKE PG 4 BRED PAUL GEORGE',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: 95,
+    brand: 'GEORGE',
+    linkImage: p4,
+    type: 1,
+  },
+  {
+    id: 53,
+    name: 'NIKE PG 4 CLIPPERS PAUL GEORGE',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: null,
+    brand: 'GEORGE',
+    linkImage: p5,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 54,
+    name: 'NIKE PG 5 BLACK MULTICOLOR PAUL GEORGE',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: null,
+    brand: 'GEORGE',
+    linkImage: p6,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 55,
+    name: 'NIKE PG 4 TRIPLE BLACK PAUL GEORGE',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: null,
+    brand: 'GEORGE',
+    linkImage: p7,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 56,
+    name: 'NIKE PG 4 USA PAUL GEORGE',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: null,
+    brand: 'GEORGE',
+    linkImage: p8,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 57,
+    name: 'NIKE PG 4 HEATHER BLACK BLUE PAUL GEORGE',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: null,
+    brand: 'GEORGE',
+    linkImage: p9,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 58,
+    name: 'NIKE PG 5 BRED PAUL GEORGE',
+    typeName: 'BASKETBALL SHOES',
+    price: 115,
+    priceDiscount: null,
+    brand: 'GEORGE',
+    linkImage: p10,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 59,
+    name: 'NIKE PG DRI-FIT TEE WHITE',
+    typeName: 'T-SHIRTS',
+    price: 35,
+    priceDiscount: null,
+    brand: 'GEORGE',
+    linkImage: p11,
+    type: 2,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 60,
+    name: 'NIKE PG DRI-FIT PG BASKETBALL TEE BLACK',
+    typeName: 'T-SHIRTS',
+    price: 35,
+    priceDiscount: null,
+    brand: 'GEORGE',
+    linkImage: p12,
+    type: 2,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 61,
+    name: 'NIKE PG SMOKE DRY TEE BLACK',
+    typeName: 'T-SHIRTS',
+    price: 35,
+    priceDiscount: null,
+    brand: 'GEORGE',
+    linkImage: p13,
+    type: 2,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 62,
+    name: 'NIKE PG DRY TEE WHITE',
+    typeName: 'T-SHIRTS',
+    price: 30,
+    priceDiscount: 25,
+    brand: 'GEORGE',
+    linkImage: p14,
+    type: 2,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+
+  {
+    id: 63,
+    name: 'NIKE PG SMOKE DRY TEE WHITE',
+    typeName: 'T-SHIRTS',
+    price: 35,
+    priceDiscount: null,
+    brand: 'GEORGE',
+    linkImage: p15,
+    type: 2,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 64,
+    name: 'NIKE KYRIE LOW 3 ORCHID',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: 95,
+    brand: 'KYRIE',
+    linkImage: p16,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+
+  {
+    id: 65,
+    name: 'NIKE KYRIE 6 ASIA',
+    typeName: 'BASKETBALL SHOES',
+    price: 120,
+    priceDiscount: null,
+    brand: 'KYRIE',
+    linkImage: k1,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 66,
+    name: 'NIKE KYRIE LOW 3 BROOKLYN NETS CLASSIC EDITION',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: null,
+    brand: 'KYRIE',
+    linkImage: k2,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 67,
+    name: 'NIKE KYRIE FLYTRAP III BLACK METALLIC GOLD',
+    typeName: 'BASKETBALL SHOES',
+    price: 85,
+    priceDiscount: null,
+    brand: 'KYRIE',
+    linkImage: k3,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 68,
+    name: 'NIKE KYRIE 6 ALLSTAR TROPHIES',
+    typeName: 'BASKETBALL SHOES',
+    price: 145,
+    priceDiscount: null,
+    brand: 'KYRIE',
+    linkImage: k4,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 69,
+    name: 'NIKE KYRIE FLYTRAP IV CRIMSON',
+    typeName: 'BASKETBALL SHOES',
+    price: 85,
+    priceDiscount: null,
+    brand: 'KYRIE',
+    linkImage: k5,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 70,
+    name: 'NIKE NBA MIAMI HEAT JIMMY BULTER CITY EDITION SWINGMAN JERSEY LASER',
+    typeName: 'T-SHIRTS',
+    price: 95,
+    priceDiscount: null,
+    brand: 'BUTLER',
+    linkImage: n1,
+    type: 2,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 71,
+    name: 'NIKE NBA MINESOTA TIMBERWOLVES JIMMY BULTER SWINGMAN JERSEY ACTION',
+    typeName: 'T-SHIRTS',
+    price: 75,
+    priceDiscount: null,
+    brand: 'BUTLER',
+    linkImage: n2,
+    type: 2,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 72,
+    name: 'NIKE NBA MINESOTA TIMBERWOLVES JIMMY BULTER ROAD SWINGMAN JERSEY ',
+    typeName: 'T-SHIRTS',
+    price: 75,
+    priceDiscount: null,
+    brand: 'BUTLER',
+    linkImage: n3,
+    type: 2,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 73,
+    name: 'NIKE NBA MIAMA HEAT JIMMY BULTER STATEMENT EDITION SWINGMAN JERSEY TOUGH RED',
+    typeName: 'T-SHIRTS',
+    price: 85,
+    priceDiscount: null,
+    brand: 'BUTLER',
+    linkImage: n4,
+    type: 2,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 'M',
+        check: false,
+      },
+      {
+        id: 1,
+        size: 'L',
+        check: false,
+      },
+      {
+        id: 2,
+        size: 'XL',
+        check: false,
+      },
+      {
+        id: 3,
+        size: 'XXL',
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 74,
+    name: 'NIKE AIR JORDAN ULTRA FLY 2 OREO JIMMY BULTER',
+    typeName: 'BASKETBALL SHOES',
+    price: 120,
+    priceDiscount: 105,
+    brand: 'BUTLER',
+    linkImage: n5,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 75,
+    name: 'NIKE AIR JORDAN ULTRA FLY 2 BRED REVERSE JIMMY BULTER',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: 90,
+    brand: 'BUTLER',
+    linkImage: n6,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 76,
+    name: 'NIKE AIR JORDAN ULTRA FLY 2 PHOTO BLUE JIMMY BULTER',
+    typeName: 'BASKETBALL SHOES',
+    price: 120,
+    priceDiscount: 110,
+    brand: 'BUTLER',
+    linkImage: n7,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 77,
+    name: 'NIKE AIR JORDAN ULTRA FLY 2 BRED JIMMY BULTER',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: 85,
+    brand: 'BUTLER',
+    linkImage: n8,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 78,
+    name: 'NIKE AIR JORDAN ULTRA FLY 2 HOME JIMMY BULTER',
+    typeName: 'BASKETBALL SHOES',
+    price: 120,
+    priceDiscount: 110,
+    brand: 'BUTLER',
+    linkImage: n9,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 79,
+    name: 'NIKE AIR JORDAN ULTRA FLY JUMMY BULTER BLACK METALLIC HERMALITE',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: 95,
+    brand: 'BUTLER',
+    linkImage: n10,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 80,
+    name: 'NIKE AIR JORDAN WESTBROOK ONE TAKE 2 MARBLE',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: null,
+    brand: 'WESTBROOK',
+    linkImage: n11,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 81,
+    name: 'NIKE AIR JORDAN WESTBROOK ONE TAKE BLACK VOLT',
+    typeName: 'BASKETBALL SHOES',
+    price: 95,
+    priceDiscount: null,
+    brand: 'WESTBROOK',
+    linkImage: n12,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 82,
+    name: 'NIKE AIR JORDAN WHY NOT ZERO.4 THE FAMILY R.WESTBROOK',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: null,
+    brand: 'WESTBROOK',
+    linkImage: n13,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 83,
+    name: 'NIKE AIR JORDAN WESTBROOK ONE TAKE QUAI 54',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: null,
+    brand: 'WESTBROOK',
+    linkImage: n14,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 84,
+    name: 'NIKE AIR JORDAN WHY NOT ZERO 4 GRAFFITI R.WESTBROOK',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: null,
+    brand: 'WESTBROOK',
+    linkImage: n15,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 85,
+    name: 'NIKE AIR JORDAN WHY NOT ZERO 3 SE ATOMIC ORANGE R.WESTBROOK',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: null,
+    brand: 'WESTBROOK',
+    linkImage: n16,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 86,
+    name: 'NIKE AIR JORDAN WHY NOT ZERO 3 HEARTBEAT R.WESTBROOK',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: null,
+    brand: 'WESTBROOK',
+    linkImage: n17,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 87,
+    name: 'NIKE AIR JORDAN WHY NOT ZERO 3 WASHED CORAL R.WESTBROOK',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: null,
+    brand: 'WESTBROOK',
+    linkImage: n18,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 88,
+    name: 'NIKE AIR JORDAN WHY NOT ZERO 3 SE FLASH CRIMSON R.WESTBROOK',
+    typeName: 'BASKETBALL SHOES',
+    price: 130,
+    priceDiscount: 115,
+    brand: 'WESTBROOK',
+    linkImage: n19,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 89,
+    name: 'NIKE AIR JORDAN R.WESTBROOK ONE TAKE 2 TROPICAL TWIST',
+    typeName: 'BASKETBALL SHOES',
+    price: 100,
+    priceDiscount: null,
+    brand: 'WESTBROOK',
+    linkImage: n20,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 90,
+    name: 'NIKE ZOOM FREAK 2 LETTER BRO GIANNIS ANTETOKOUMPO',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: 100,
+    brand: 'ANTETOKOUNMPO',
+    linkImage: n21,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 91,
+    name: 'NIKE ZOOM FREAK 2 ASHIKO GIANNIS ANTETOKOUMPO',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: 100,
+    brand: 'ANTETOKOUNMPO',
+    linkImage: n22,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 92,
+    name: 'NIKE ZOOM FREAK 1 ATMOSPHERE GREY',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: 100,
+    brand: 'ANTETOKOUNMPO',
+    linkImage: n23,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 93,
+    name: 'NIKE ZOOM FREAK 2 TAXI GIANNIS ANTETOKOUMPO',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: null,
+    brand: 'ANTETOKOUNMPO',
+    linkImage: n24,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 94,
+    name: 'NIKE ZOOM FREAK 1 ROSES GIANNIS ANTETOKOUMPO',
+    typeName: 'BASKETBALL SHOES',
+    price: 120,
+    priceDiscount: null,
+    brand: 'ANTETOKOUNMPO',
+    linkImage: n25,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 95,
+    name: 'NIKE ZOOM FREAK 2 BRED GIANNIS ANTETOKOUMPO',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: null,
+    brand: 'ANTETOKOUNMPO',
+    linkImage: n26,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+
+  {
+    id: 96,
+    name: 'NIKE ZOOM FREAK 2 WHITE CEMENT GIANNIS ANTETOKOUMPO',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: null,
+    brand: 'ANTETOKOUNMPO',
+    linkImage: n27,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 97,
+    name: 'NIKE ZOOM FREAK 1 ROOTS GIANNIS ANTETOKOUMPO',
+    typeName: 'BASKETBALL SHOES',
+    price: 110,
+    priceDiscount: null,
+    brand: 'ANTETOKOUNMPO',
+    linkImage: n28,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 98,
+    name: 'NIKE KOBE MAMBA FURY LAKERS AWAY',
+    typeName: 'BASKETBALL SHOES',
+    price: 120,
+    priceDiscount: 110,
+    brand: 'BRYANT',
+    linkImage: n29,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 99,
+    name: 'NIKE KOBE MAMBA FURY LAKERS HOME',
+    typeName: 'BASKETBALL SHOES',
+    price: 120,
+    priceDiscount: null,
+    brand: 'BRYANT',
+    linkImage: n30,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 100,
+    name: 'NIKE KOBE MAMBA FURY BLACK MAMBA',
+    typeName: 'BASKETBALL SHOES',
+    price: 120,
+    priceDiscount: null,
+    brand: 'BRYANT',
+    linkImage: n31,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 101,
+    name: 'NIKE KOBE MAMBA FURY WHITE WOLF GREY',
+    typeName: 'BASKETBALL SHOES',
+    price: 120,
+    priceDiscount: null,
+    brand: 'BRYANT',
+    linkImage: n32,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 102,
+    name: 'NIKE KOBE A.D. 12 MID HENESIS BLACK GUM LIGHT BROWN',
+    typeName: 'BASKETBALL SHOES',
+    price: 150,
+    priceDiscount: null,
+    brand: 'BRYANT',
+    linkImage: n33,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 103,
+    name: 'NIKE KOBE MAMBA FOCUS LAKERS',
+    typeName: 'BASKETBALL SHOES',
+    price: 105,
+    priceDiscount: null,
+    brand: 'BRYANT',
+    linkImage: n34,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 104,
+    name: 'NIKE KOBE MAMBA FOCUS METALLIC GOLD',
+    typeName: 'BASKETBALL SHOES',
+    price: 155,
+    priceDiscount: null,
+    brand: 'BRYANT',
+    linkImage: n35,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 105,
+    name: 'NIKE KOBE A.D. 12 GENESIS GREY SNAKE',
+    typeName: 'BASKETBALL SHOES',
+    price: 150,
+    priceDiscount: null,
+    brand: 'BRYANT',
+    linkImage: n36,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 106,
+    name: 'NIKE KOBE AD NXT FF VAST GREY',
+    typeName: 'BASKETBALL SHOES',
+    price: 220,
+    priceDiscount: null,
+    brand: 'BRYANT',
+    linkImage: n37,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 107,
+    name: 'NIKE KOBE A.D. 12 MID GENESIS WHITE PURPLE',
+    typeName: 'BASKETBALL SHOES',
+    price: 150,
+    priceDiscount: null,
+    brand: 'BRYANT',
+    linkImage: n38,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 108,
+    name: 'NIKE ZOOM KD 13 EYBL',
+    typeName: 'BASKETBALL SHOES',
+    price: 145,
+    priceDiscount: null,
+    brand: 'KD',
+    linkImage: n39,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 109,
+    name: 'NIKE ZOOM KD 13 USA OLYMPIC TEAM',
+    typeName: 'BASKETBALL SHOES',
+    price: 145,
+    priceDiscount: null,
+    brand: 'KD',
+    linkImage: n40,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 110,
+    name: 'NIKE ZOOM KD 13 BRED',
+    typeName: 'BASKETBALL SHOES',
+    price: 120,
+    priceDiscount: null,
+    brand: 'KD',
+    linkImage: n41,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 111,
+    name: 'NIKE ZOOM KD 13 OREO',
+    typeName: 'BASKETBALL SHOES',
+    price: 145,
+    priceDiscount: null,
+    brand: 'KD',
+    linkImage: n33,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 112,
+    name: 'NIKE KD TREY 5 VIII BLACK ILLUSION GREEN',
+    typeName: 'BASKETBALL SHOES',
+    price: 95,
+    priceDiscount: null,
+    brand: 'KD',
+    linkImage: n42,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 113,
+    name: 'NIKE KD TREY 5 VIII BLUE VOID',
+    typeName: 'BASKETBALL SHOES',
+    price: 95,
+    priceDiscount: null,
+    brand: 'KD',
+    linkImage: n43,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 114,
+    name: 'NIKE KD FULL COURT 8P AMBER',
+    typeName: 'BALLS',
+    price: 45,
+    priceDiscount: null,
+    brand: 'KD',
+    linkImage: b2,
+    type: 2,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 6,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 7,
+        check: false,
+      },
+    ],
+  },
+  {
+    id: 115,
+    name: 'NIKE ZOOM FREAK 1 GREECE GIANNIS ANTETOKOUMPO',
+    typeName: 'BASKETBALL SHOES',
+    price: 120,
+    priceDiscount: null,
+    brand: 'ANTETOKOUNMPO',
+    linkImage: z1,
+    type: 1,
+    sizeShoes: [
+      {
+        id: 0,
+        size: 39,
+        check: false,
+      },
+      {
+        id: 1,
+        size: 40,
+        check: false,
+      },
+      {
+        id: 2,
+        size: 41,
+        check: false,
+      },
+      {
+        id: 3,
+        size: 42,
+        check: false,
+      },
+      {
+        id: 4,
+        size: 43,
+        check: false,
+      },
+    ],
+  },
 ];
 
 export const dataPlayer = [
-    {
-        id:0,
-        idType:'LEBRON',
-        linkImage:player1
-    },
-    {
-        id:1,
-        idType:'GRIFFIN',
-        linkImage:player2,
-    },
-    {
-        id:2,
-        idType:'GEORGE',
-        linkImage:player3,
-    },
-    {
-        id:3,
-        idType:'KYRIE',
-        linkImage:player4,
-    },
-    {
-        id:4,
-        idType:'BUTLER',
-        linkImage:player5,
-    },
-    {
-        id:5,
-        idType:'WESTBROOK',
-        linkImage:player6,
-    },
-    {
-        id:6,
-        idType:'ANTETOKOUNMPO',
-        linkImage:player7,
-    },
-    {
-        id:7,
-        idType:'BRYANT',
-        linkImage:player8,
-    },
-    {
-        id:8,
-        idType:'JORDAN',
-        linkImage:player9,
-    },
-    {
-        id:9,
-        idType:'KD',
-        linkImage:player10,
-    }
-]
+  {
+    id: 0,
+    idType: 'LEBRON',
+    linkImage: player1,
+  },
+  {
+    id: 1,
+    idType: 'GRIFFIN',
+    linkImage: player2,
+  },
+  {
+    id: 2,
+    idType: 'GEORGE',
+    linkImage: player3,
+  },
+  {
+    id: 3,
+    idType: 'KYRIE',
+    linkImage: player4,
+  },
+  {
+    id: 4,
+    idType: 'BUTLER',
+    linkImage: player5,
+  },
+  {
+    id: 5,
+    idType: 'WESTBROOK',
+    linkImage: player6,
+  },
+  {
+    id: 6,
+    idType: 'ANTETOKOUNMPO',
+    linkImage: player7,
+  },
+  {
+    id: 7,
+    idType: 'BRYANT',
+    linkImage: player8,
+  },
+  {
+    id: 8,
+    idType: 'JORDAN',
+    linkImage: player9,
+  },
+  {
+    id: 9,
+    idType: 'KD',
+    linkImage: player10,
+  },
+];

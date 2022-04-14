@@ -1,541 +1,530 @@
-.shoeDetail{
-    width: 95%;
-    margin:0 auto;
-    &__player{
+.shoeDetail {
+  width: 95%;
+  margin: 0 auto;
+  &__player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__titlePlayer {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+  }
+  &__titleOther {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &__other {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-bottom: 150px;
+
+    &__item {
+      margin: 5px;
+      width: 250px;
+      max-width: 199px;
+      height: 160px;
+      &__name {
+        h1 {
+          font-size: 14px;
+        }
+      }
+      &__price {
         display: flex;
+        align-items: center;
         justify-content: space-between;
+        margin-top: 20px;
+        border-top: 1px solid #ccc;
+        &__money {
+          display: flex;
+          align-items: center;
+          span,
+          del {
+            font-size: 13px;
+          }
+          del {
+            margin-right: 10px;
+          }
+        }
+        &__iconCard {
+          .MuiSvgIcon-root {
+            font-size: 18px;
+            color: #ccc;
+          }
+        }
+      }
+      &__image {
+        margin-right: 5px;
+        margin-bottom: 10px;
+        width: 190px;
+        height: 140px;
+        cursor: pointer;
+        position: relative;
+        &:hover::before {
+          visibility: visible;
+          opacity: 1;
+        }
+        &::before {
+          content: 'VIEW DETAIL';
+          background-color: rgba(0, 0, 0, 0.8);
+          color: #fff;
+          font-weight: bolder;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          opacity: 0;
+          visibility: hidden;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+
+          transition: all 0.5s;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  &__items {
+    margin: 40px 0 250px 0;
+    &__item {
+      display: flex;
+
+      &__name {
+        margin: 20px;
+        h1 {
+          font-size: 2rem;
+          font-weight: 600;
+          margin-bottom: 5px;
+        }
+        h3 {
+          margin-bottom: 20px;
+        }
+        &__addAndAmount {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-top: 50px;
+        }
+        &__amount {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          margin-right: 20px;
+          border: 1px solid rgb(230, 230, 230);
+          width: 100px;
+          padding: 5px 0;
+          .MuiSvgIcon-root {
+            font-size: 15px;
+            color: rgb(179, 179, 179);
+            cursor: pointer;
+          }
+        }
+        &__size {
+          margin-top: 20px;
+          h2 {
+            margin: 10px 0;
+          }
+          span {
+            color: red;
+            font-weight: bolder;
+          }
+          button:not(:first-child) {
+            margin-left: 10px;
+            cursor: pointer;
+          }
+          button {
+            padding: 5px 20px;
+            border-radius: 5px;
+            border: 2px solid rgb(107, 107, 107);
+            font-weight: 500;
+            background-color: rgb(248, 248, 248);
+            transition: all 0.4s;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+              Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+              sans-serif;
+            &:hover {
+              background-color: rgb(216, 216, 216);
+            }
+            &:focus {
+              border: 2px solid red;
+              background-color: rgb(216, 216, 216);
+              font-weight: bolder;
+            }
+          }
+          .MuiButtonBase-root:not(:first-child) {
+            margin-left: 10px;
+          }
+          .MuiButtonBase-root {
+            &:focus {
+              border: 1px solid red;
+              background-color: red;
+            }
+          }
+        }
+        &__addToCart {
+          padding: 10px 15px;
+          border: none;
+          // margin-top:50px;
+          border-radius: 10px;
+          background-color: #d30004;
+          color: #fff;
+          font-weight: bolder;
+          font-size: 1rem;
+
+          transition: all 0.5s;
+          cursor: pointer;
+
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+
+          width: 270px;
+          &:focus {
+            outline: none;
+            border: none;
+          }
+          &:hover {
+            background-color: #111;
+            color: #fff;
+          }
+        }
+        &__price {
+          .price {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-left: 10px;
+          }
+          .priceDiscount {
+            del {
+              font-size: 1rem;
+              margin-right: 10px;
+            }
+            span {
+              font-size: 2rem;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      &__image {
+        // width:800px;
+        // height: 430px;
+        width: 50%;
+        height: 50%;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        &__detail {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          margin-top: 2px;
+          &__imageDetail {
+            width: 100%;
+            max-width: 139px;
+            height: auto;
+
+            margin-right: 5px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1325px) {
+  .shoeDetail {
+    &__other {
+      &__item {
+        margin-bottom: 80px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1035px) {
+  .shoeDetail {
+    &__items {
+      &__item {
+        &__image {
+          width: 500px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 860px) {
+  .shoeDetail {
+    &__items {
+      &__item {
+        &__image {
+          // width: 600px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 840px) {
+  .shoeDetail {
+    &__items {
+      &__item {
+        flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
+        &__image {
+          width: 700px;
+          height: 400px;
+          // margin-top:100px;
+        }
+        &__name {
+          margin-top: 215px;
+        }
+      }
     }
-    &__titlePlayer{
-        text-align: center;
-        margin-bottom: 50px;
-        font-size:2rem;
-    }
-    &__titleOther{
-        font-size:2rem;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    &__other{
-        display: flex;
+  }
+}
+@media screen and (max-width: 730px) {
+  .shoeDetail {
+    &__items {
+      &__item {
+        flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
-
-        margin-bottom: 150px;
-
-        &__item{
-            margin:5px;
-            width:250px;
-            max-width:199px;
-            height: 160px;
-            &__name{
-    
-                h1{
-                    font-size:14px;
-                }
-             
-            }
-            &__price{   
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-top:20px;
-                border-top:1px solid #ccc;
-                &__money{
-                    display: flex;
-                    align-items: center;
-                    span,del{
-                        font-size:13px;
-                    }
-                    del{
-                        margin-right:10px;
-                    }
-                }
-                &__iconCard{
-                    .MuiSvgIcon-root{
-                        font-size:18px;
-                        color:#ccc;
-                    }
-                }
-         
-            }
-            &__image{
-                margin-right: 5px;
-                margin-bottom: 10px;
-                width:190px;
-                height: 140px;
-                cursor: pointer;
-                position: relative;
-                &:hover::before{
-                    visibility: visible;
-                    opacity: 1;
-                }
-                &::before{
-                    content: 'VIEW DETAIL';
-                    background-color: rgba(0,0,0,0.8);
-                    color:#fff;
-                    font-weight: bolder;
-               
-                    display:flex;
-                    justify-content:center;
-                    align-items:center;
-
-                
-                    opacity: 0;
-                    visibility: hidden;
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    bottom: 0;
-                    left:0;
-
-                    transition: all .5s;
-                }
-                img{
-                    width:100%;
-                    height:100%;
-                    object-fit: cover;
-                 
-                }
-            }
+        &__image {
+          width: 600px;
+          height: auto;
+          // margin-top:100px;
         }
-    }
-    &__items{
-        margin:40px 0 250px 0;
-        &__item{
-            display: flex;
-         
-            &__name{
-                margin:20px;
-                h1{
-                    font-size:2rem;
-                    font-weight: 600;
-                    margin-bottom:5px;
-                }
-                h3{
-                    margin-bottom: 20px;
-                }
-                &__addAndAmount{
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    margin-top:50px;
-                }
-                &__amount{
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-around;
-                    margin-right: 20px;
-                    border:1px solid rgb(230, 230, 230);
-                    width: 100px;
-                    padding:5px 0;
-                    .MuiSvgIcon-root{
-                        font-size:15px;
-                        color:rgb(179, 179, 179);
-                        cursor: pointer;
-                    }
-                }
-                &__size{
-                    margin-top:20px;
-                    h2{
-                        margin:10px 0;
-                    }
-                    span{
-                        color:red;
-                        font-weight: bolder;
-                    }
-                    button:not(:first-child){
-                        margin-left:10px;
-                        cursor: pointer;
-                    }
-                    button{
-                        padding:5px 20px;
-                        border-radius: 5px;
-                        border:2px solid rgb(107, 107, 107);
-                        font-weight: 500;
-                        background-color: rgb(248, 248, 248);
-                        transition:  all .4s;
-                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                        &:hover{
-                            background-color: rgb(216, 216, 216);
-                        }
-                        &:focus{
-                            border:2px solid red;
-                            background-color: rgb(216, 216, 216);
-                            font-weight: bolder;
-                        }
-                    }
-                    .MuiButtonBase-root:not(:first-child){
-                        margin-left:10px;
-                       
-                    }
-                    .MuiButtonBase-root{
-                        &:focus{
-                            border:1px solid red;
-                            background-color: red;
-                        }
-                    }
-                }
-                &__addToCart{
-                    padding:10px 15px;
-                    border:none;
-                    // margin-top:50px;
-                    border-radius: 10px;
-                    background-color: #d30004 ;
-                    color:#fff;
-                    font-weight: bolder;
-                    font-size:1rem;
-                    
-                    transition: all .5s;
-                    cursor: pointer;
-
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-evenly;
-
-                    width: 270px;
-                  &:focus{
-                      outline: none;
-                      border: none;
-                  } 
-                  &:hover{
-                      background-color: #111;
-                      color:#fff;
-                  }
-                } 
-                &__price{
-                  
-                    .price{
-                        font-size:2rem;
-                        font-weight: 600;
-                        margin-left:10px;
-                    }
-                    .priceDiscount{
-                        del{
-                            font-size:1rem;
-                            margin-right: 10px;
-                        }
-                        span{
-                            font-size:2rem;
-                            font-weight: 600;
-                        }
-                    }
-                }
-            }
-            &__image{
-                width:800px;
-                height: 430px;
-                cursor: pointer;
-                img{
-                    width:100%;
-                    height:100%;
-                    object-fit: cover;
-                }
-                &__detail{
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-
-                    margin-top:2px;
-                    &__imageDetail{
-                        width: 100%;
-                        max-width:139px;
-                        height: auto;
-                     
-                        margin-right: 5px;
-                        img{
-                            width:100%;
-                            height:100%;
-                            object-fit: cover;
-                        }
-                    }
-                }
-            }
+        &__name {
+          margin-top: 100px;
         }
+      }
     }
+  }
 }
-@media screen and (max-width:1325px) {
-    .shoeDetail{
-        &__other{
-            &__item{
-                margin-bottom: 80px;
-            }
+@media screen and (max-width: 660px) {
+  .shoeDetail {
+    &__items {
+      &__item {
+        &__image {
+          width: 500px;
+          height: auto;
+          // margin-top:100px;
         }
+      }
     }
-}
-@media screen and (max-width:1035px) {
-    .shoeDetail{
-        &__items{
-            &__item{
-                &__image{
-                    width: 500px;
-                    height: 300px;
-                }
-            }
-        }
+    &__titleOther {
+      text-align: center;
     }
-}
-@media screen and (max-width:860px) {
-    .shoeDetail{
-        &__items{
-            &__item{
-                &__image{
-                    // width: 600px;
-                    height:200px;
-                }
-            }
+    &__other {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__item {
+        width: 450px;
+        max-width: 450px;
+        height: auto;
+        &__image {
+          width: 450px;
+          max-width: 450px;
+          height: auto;
         }
+      }
     }
+  }
 }
-@media screen and (max-width:840px) {
-    .shoeDetail{
-        &__items{
-            &__item{
-                flex-direction: column;
-                align-items: center;
-                &__image{
-                    width: 700px;
-                    height:400px;
-                    // margin-top:100px;
-                }
-                &__name{
-                    margin-top: 215px;
-                }
-            }
-        }
+@media screen and (max-width: 545px) {
+  .shoeDetail {
+    &__titleOther {
+      text-align: center;
     }
-}
-@media screen and (max-width:730px) {
-    .shoeDetail{
-        &__items{
-            &__item{
-                flex-direction: column;
-                align-items: center;
-                &__image{
-                    width: 600px;
-                    height:auto;
-                    // margin-top:100px;
-                }
-                &__name{
-                    margin-top: 100px;
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width:660px) {
-    .shoeDetail{
-        &__items{
-            &__item{
-                &__image{
-                    width: 500px;
-                    height:auto;
-                    // margin-top:100px;
-                }
-            }
-        }
-        &__titleOther{
-            text-align: center;
-        }
-        &__other{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            &__item{
-                width:450px;
-                max-width: 450px;
-                height: auto;
-                &__image{
-                    width:450px;
-                    max-width: 450px;
-                    height: auto;
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width:545px) {
-    .shoeDetail{
-        &__titleOther{
-            text-align: center;
-        }
-        &__other{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            &__item{
-                width:350px;
-                max-width: 350px;
-               
-                &__image{
-                    width:350px;
-                    max-width: 350px;   
-                    
-                }
-            }
-        }
-        &__player{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-        }
-    }
-}
-@media screen and (max-width:512px) {
-    .shoeDetail{
-        &__items{
-            &__item{
-                flex-direction: column;
-                align-items: center;
+    &__other {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__item {
+        width: 350px;
+        max-width: 350px;
 
-                &__image{
-                    width: 400px;
-                    height:auto;
-                    // margin-top:100px;
-                }
-                &__name{
-                    margin:50px 0 0 50px;
-                    &__amount{
-                        margin-bottom: 20px;
-                    }
-                    &__addAndAmount{
-                        flex-direction: column;
-                        align-items: flex-start;
-                        margin-top: 20px;
-                    }
-                }
-            }
+        &__image {
+          width: 350px;
+          max-width: 350px;
         }
-        &__titleOther{
-            text-align: center;
-        }
-        &__other{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            &__item{
-                width:350px;
-                max-width: 350px;
-               
-                &__image{
-                    width:350px;
-                    max-width: 350px;   
-                    
-                }
-            }
-        }
-   
+      }
     }
+    &__player {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
-@media screen and (max-width:425px) {
-    .shoeDetail{
-        &__items{
-            &__item{
-             
-                &__image{
-                    width: 300px;
-                    height:auto;
-                    // margin-top:100px;
-                }
-                &__name{
-                    margin: 50px 0 0 20px;
-                    h1{
-                        font-size:1.5rem;
-                    }
-                    &__size{
-                        button{
-                            padding:4px 10px;
-                        }
-                    }
-                    &__addAndAmount{
+@media screen and (max-width: 512px) {
+  .shoeDetail {
+    &__items {
+      &__item {
+        flex-direction: column;
+        align-items: center;
 
-                    }
-                    &__addToCart{
-                        width:200px;
-                    }
-                }
-            }
+        &__image {
+          width: 400px;
+          height: auto;
+          // margin-top:100px;
         }
-        &__titleOther{
-            text-align: center;
+        &__name {
+          margin: 50px 0 0 50px;
+          &__amount {
+            margin-bottom: 20px;
+          }
+          &__addAndAmount {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 20px;
+          }
         }
-        &__other{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            margin-left:15px;
-            &__item{
-                width:270px;
-                max-width: 270px;
-               
-                &__image{
-                    width:270px;
-                    max-width: 270px;   
-                    
-                }
-            }
-        }
-        &__player{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-        }
+      }
     }
+    &__titleOther {
+      text-align: center;
+    }
+    &__other {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__item {
+        width: 350px;
+        max-width: 350px;
+
+        &__image {
+          width: 350px;
+          max-width: 350px;
+        }
+      }
+    }
+  }
 }
-@media screen and (max-width:335px) {
-    .shoeDetail{
-        &__items{
-            &__item{
-             
-                &__image{
-                    width: 250px;
-                    height:auto;
-                    // margin-top:100px;
-                }
-                &__name{
-                    margin: 50px 0 0 10px;
-                    h1{
-                        font-size:1.5rem;
-                    }
-                    &__size{
-                        button:not(:first-child){
-                            padding:4px 10px;
-                            margin-left:5px;
-                        }
-                    }
-                    &__addAndAmount{
-
-                    }
-                    &__addToCart{
-                        width:200px;
-                    }
-                }
+@media screen and (max-width: 425px) {
+  .shoeDetail {
+    &__items {
+      &__item {
+        &__image {
+          width: 300px;
+          height: auto;
+          // margin-top:100px;
+        }
+        &__name {
+          margin: 50px 0 0 20px;
+          h1 {
+            font-size: 1.5rem;
+          }
+          &__size {
+            button {
+              padding: 4px 10px;
             }
+          }
+          &__addAndAmount {
+          }
+          &__addToCart {
+            width: 200px;
+          }
         }
-        &__titleOther{
-            text-align: center;
-        }
-        &__other{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            margin-left:5px;
-            &__item{
-                width:250px;
-                max-width: 250px;
-               
-                &__image{
-                    width:250px;
-                    max-width: 250px;   
-                    
-                }
-            }
-        }
-        &__player{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-        }
+      }
     }
+    &__titleOther {
+      text-align: center;
+    }
+    &__other {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 15px;
+      &__item {
+        width: 270px;
+        max-width: 270px;
+
+        &__image {
+          width: 270px;
+          max-width: 270px;
+        }
+      }
+    }
+    &__player {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+@media screen and (max-width: 335px) {
+  .shoeDetail {
+    &__items {
+      &__item {
+        &__image {
+          width: 250px;
+          height: auto;
+          // margin-top:100px;
+        }
+        &__name {
+          margin: 50px 0 0 10px;
+          h1 {
+            font-size: 1.5rem;
+          }
+          &__size {
+            button:not(:first-child) {
+              padding: 4px 10px;
+              margin-left: 5px;
+            }
+          }
+          &__addAndAmount {
+          }
+          &__addToCart {
+            width: 200px;
+          }
+        }
+      }
+    }
+    &__titleOther {
+      text-align: center;
+    }
+    &__other {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+      &__item {
+        width: 250px;
+        max-width: 250px;
+
+        &__image {
+          width: 250px;
+          max-width: 250px;
+        }
+      }
+    }
+    &__player {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }

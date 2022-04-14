@@ -19,6 +19,7 @@ function Cart() {
   const cartArr = useSelector((item) => item.ShoesReducer.cart);
   //Total Cart In Redux
   const cart = useSelector((item) => item.ShoesReducer.cart);
+  const userLogin = useSelector((user) => user.ShoesReducer.userLogin);
   const dispatch = useDispatch();
   //Dispatch Shoe In Store Redux
   const handleShoeDetail = (item) => {
@@ -124,6 +125,7 @@ function Cart() {
                 <img
                   src="https://cdn0.iconfinder.com/data/icons/check-out-vol-1-2/48/Check_Out-13-512.png"
                   onClick={() => handleRemoveItem(item.id)}
+                  alt={item.name}
                 />
               </td>
             </tr>
@@ -140,10 +142,16 @@ function Cart() {
   //Handle Check Out
   const [err, setErr] = useState(false);
   const handleCheckOut = () => {
-    setErr(true);
-    setTimeout(() => {
-      setErr(false);
-    }, 2000);
+    // setErr(true);
+    //Check user exist
+    if (Object.keys(userLogin).length > 0) {
+      alert('Filler Information and Done!!!');
+    } else {
+      setErr(true);
+      setTimeout(() => {
+        setErr(false);
+      }, 2000);
+    }
   };
   return (
     <>

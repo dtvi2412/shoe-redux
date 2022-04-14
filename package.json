@@ -17,6 +17,7 @@
     "react-slick": "^0.28.1",
     "redux": "^4.1.0",
     "redux-thunk": "^2.3.0",
+    "sass": "^1.50.0",
     "simple-react-lightbox": "^3.6.6",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^1.1.2"

@@ -5,11 +5,11 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 import ListIcon from '@material-ui/icons/List';
-import Logo from '../../Assets/Images/Logo Thai Vipng1.png';
+import Logo from '../../Assets/Images/logo.png';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { createAction } from '../../Redux/Action';
-import { ITEM_DETAIL } from '../../Redux/Constants';
+import { ITEM_DETAIL, LOGOUT } from '../../Redux/Constants';
 
 function Header() {
   const [headerMid, setHeaderMid] = useState(false);
@@ -22,26 +22,30 @@ function Header() {
   //Store Cart
   const cart = useSelector((item) => item.ShoesReducer.cart);
   const dispatch = useDispatch();
+  const userLogin = useSelector((user) => user.ShoesReducer.userLogin);
+
   //Set Scrool Y Header Mid
   useEffect(() => {
     if (window.innerWidth > 930) {
       let headerMid = document.querySelector('.header__mid');
 
       window.addEventListener('scroll', () => {
-        if (window.scrollY > 180) {
+        if (window.scrollY > 50) {
           setHeaderMid(true);
-          headerMid.setAttribute(
-            'style',
-            // 'border-bottom:1px solid #d8d5d5;transition:all .5s; animation: headerMidDown 0.4s linear 0s 1;'
-            'border-bottom:1px solid #d8d5d5;'
-          );
+          headerMid &&
+            headerMid.setAttribute(
+              'style',
+              // 'border-bottom:1px solid #d8d5d5;transition:all .5s; animation: headerMidDown 0.4s linear 0s 1;'
+              'border-bottom:1px solid #d8d5d5;'
+            );
         } else {
           setHeaderMid(false);
-          headerMid.setAttribute(
-            'style',
-            // 'border-bottom:none;transition:all .5s;animation: headerMidUp 0.4s linear 0s 1;',
-            'border-bottom:none'
-          );
+          headerMid &&
+            headerMid.setAttribute(
+              'style',
+              // 'border-bottom:none;transition:all .5s;animation: headerMidUp 0.4s linear 0s 1;',
+              'border-bottom:none'
+            );
         }
       });
     }
@@ -113,6 +117,7 @@ function Header() {
     });
     // setSizeShoe(false);
     dispatch(createAction(ITEM_DETAIL, item));
+    setCloseHeader(false);
   };
   //Handle Loading Data Content Search
   const [waiting, setWaiting] = useState(false);
@@ -154,6 +159,12 @@ function Header() {
         );
       });
   };
+
+  //Handle Logout
+  const handleLogout = () => {
+    dispatch(createAction(LOGOUT));
+  };
+
   return (
     <div className="header">
       {/* Logo Jordan */}
@@ -171,11 +182,26 @@ function Header() {
             <li>
               <a href="#abc">Join Us</a>
             </li>
-            <li>
-              <Link to="/login" href="#abc">
-                Sign In
-              </Link>
-            </li>
+            {Object.keys(userLogin).length > 0 ? (
+              <div>
+                <div className="nameLogin">{userLogin.user}</div>
+                <span
+                  onClick={() => handleLogout()}
+                  style={{ cursor: 'pointer' }}
+                >
+                  Logout
+                </span>
+              </div>
+            ) : (
+              <>
+                <li>
+                  <Link to="/login">Sign In</Link>
+                </li>
+                <li>
+                  <Link to="/signup">Sign Up</Link>
+                </li>
+              </>
+            )}
           </ul>
         </nav>
       </div>
@@ -188,6 +214,13 @@ function Header() {
             <HighlightOffIcon />
           </div>
           <div className="header__mid__logo">
+            <Link to="/" onClick={() => handleBackHomePage()}>
+              <img
+                style={{ width: 50, height: 50, marginRight: 10 }}
+                src={Logo}
+                alt="logo"
+              />
+            </Link>
             <svg
               class="pre-logo-svg"
               height="60px"
@@ -197,9 +230,6 @@ function Header() {
             >
               <path d="M68.56 4L18.4 25.36Q12.16 28 7.92 28q-4.8 0-6.96-3.36-1.36-2.16-.8-5.48t2.96-7.08q2-3.04 6.56-8-1.6 2.56-2.24 5.28-1.2 5.12 2.16 7.52Q11.2 18 14 18q2.24 0 5.04-.72z"></path>
             </svg>
-            <Link to="/" onClick={() => handleBackHomePage()}>
-              <img src={Logo} alt="logo" />
-            </Link>
           </div>
           <nav>
             <ul>
