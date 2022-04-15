@@ -48,6 +48,8 @@ function Header() {
             );
         }
       });
+    } else {
+      setCloseHeader(false);
     }
   }, []);
 

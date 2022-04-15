@@ -66,6 +66,7 @@ function ShoeDetail(props) {
     });
     setSizeShoe(false);
     setAmount(1);
+    setSizeProduct(null);
     dispatch(createAction(ITEM_DETAIL, item));
   };
   //Render Player
@@ -194,7 +195,7 @@ function ShoeDetail(props) {
               </p>
               <div className="shoeDetail__items__item__name__size">
                 <h2>
-                  Size : {sizeProduct}
+                  Size : <span style={{ color: 'red' }}>{sizeProduct}</span>
                   {/* {item.sizeShoes
                     ?.filter((item) => item.check === true)
                     .map((item2) => {
@@ -308,7 +309,7 @@ function ShoeDetail(props) {
   return (
     <div className="shoeDetail">
       <div className="shoeDetail__items">{renderShoeDetail()}</div>{' '}
-      <h1 className="shoeDetail__titleOther">Other shoes</h1>
+      <h1 className="shoeDetail__titleOther">Other</h1>
       <div className="shoeDetail__other">{renderOtherShoes()}</div>
       <h1 className="shoeDetail__titlePlayer">SELECT YOUR PLAYER</h1>
       <div className="shoeDetail__player">{renderPlayer()}</div>

@@ -46,9 +46,9 @@ function Cart() {
   //Render Cart
   const renderCart = () => {
     return cartArr
-      ?.map((item) => {
+      ?.map((item, index) => {
         return (
-          <React.Fragment key={item.id}>
+          <React.Fragment key={index}>
             <tr className="cart__items__item">
               <td data-label="Products" className="cart__items__item__product">
                 <Link
