@@ -29,9 +29,12 @@ function ShoeDetail(props) {
   const player = useSelector((state) => state.ShoesReducer.player);
   const shoeDetailRedux = useSelector((state) => state.ShoesReducer.shoeDetail);
   const idParams = props.match.params.id;
+
   //Choose Size Shoe
   const [sizeShoe, setSizeShoe] = useState(false);
   const [changeSize, setChangeSize] = useState(false);
+  const [sizeProduct, setSizeProduct] = useState(null);
+
   //Notification Error
   const [err, setErr] = useState(false);
   //Notification
@@ -103,6 +106,7 @@ function ShoeDetail(props) {
           ADD_TO_CART,
           {
             ...item,
+            sizeProduct,
             amount: parseInt(amount),
           },
           amount
@@ -190,8 +194,8 @@ function ShoeDetail(props) {
               </p>
               <div className="shoeDetail__items__item__name__size">
                 <h2>
-                  Size :
-                  {item.sizeShoes
+                  Size : {sizeProduct}
+                  {/* {item.sizeShoes
                     ?.filter((item) => item.check === true)
                     .map((item2) => {
                       return (
@@ -199,7 +203,7 @@ function ShoeDetail(props) {
                           {item2.size}
                         </span>
                       );
-                    })}
+                    })} */}
                 </h2>
                 {item.sizeShoes?.map((item2) => {
                   return (
@@ -207,7 +211,12 @@ function ShoeDetail(props) {
                       className=""
                       variant="outlined"
                       key={item2.id}
-                      onClick={() => handleChooseSize(item2.id, item.id)}
+                      // onClick={() => handleChooseSize(item2.id, item.id)}
+                      onClick={() => {
+                        setSizeProduct(item2.size);
+                        setSizeShoe(true);
+                        setChangeSize(!changeSize);
+                      }}
                     >
                       {item2.size}
                     </button>

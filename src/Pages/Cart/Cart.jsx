@@ -31,16 +31,16 @@ function Cart() {
     dispatch(createAction(ITEM_DETAIL, item));
   };
   //Remove Item
-  const handleRemoveItem = (id) => {
-    dispatch(createAction(REMOVE_ITEM, id));
+  const handleRemoveItem = (id, sizeProduct) => {
+    dispatch(createAction(REMOVE_ITEM, id, sizeProduct));
   };
   //Handle Up And Down Cart In Cart
-  const handleUpAndDownAmountCart = (id, name) => {
+  const handleUpAndDownAmountCart = (id, name, sizeProduct) => {
     if (name === 'up') {
-      dispatch(createAction(UP_AND_DOWN_CART, id, name));
+      dispatch(createAction(UP_AND_DOWN_CART, { id, sizeProduct }, name));
     }
     if (name === 'down') {
-      dispatch(createAction(UP_AND_DOWN_CART, id, name));
+      dispatch(createAction(UP_AND_DOWN_CART, { id, sizeProduct }, name));
     }
   };
   //Render Cart
@@ -63,7 +63,8 @@ function Cart() {
               </td>
               <td data-label="Color">Grey</td>
               <td data-label="Size">
-                {item.sizeShoes
+                {item.sizeProduct}
+                {/* {item.sizeShoes
                   .filter((item) => item.check === true)
                   .map((sizeTrue) => {
                     return (
@@ -71,14 +72,22 @@ function Cart() {
                         {sizeTrue.size}
                       </React.Fragment>
                     );
-                  })}
+                  })} */}
               </td>
               <td data-label="Amount" className="cart__items__item__amount">
-                <div onClick={() => handleUpAndDownAmountCart(item.id, 'down')}>
+                <div
+                  onClick={() =>
+                    handleUpAndDownAmountCart(item.id, 'down', item.sizeProduct)
+                  }
+                >
                   <NavigateBeforeIcon />
                 </div>
                 <span>{item?.amount}</span>
-                <div onClick={() => handleUpAndDownAmountCart(item.id, 'up')}>
+                <div
+                  onClick={() =>
+                    handleUpAndDownAmountCart(item.id, 'up', item.sizeProduct)
+                  }
+                >
                   <NavigateNextIcon />
                 </div>
               </td>
@@ -124,7 +133,7 @@ function Cart() {
                 {/* <CloseIcon /> */}
                 <img
                   src="https://cdn0.iconfinder.com/data/icons/check-out-vol-1-2/48/Check_Out-13-512.png"
-                  onClick={() => handleRemoveItem(item.id)}
+                  onClick={() => handleRemoveItem(item.id, item.sizeProduct)}
                   alt={item.name}
                 />
               </td>

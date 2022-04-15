@@ -17,7 +17,9 @@ let initailState = {
   player: dataPlayer,
   shoeDetail: {},
   search: '',
-  cart: [],
+  cart: localStorage.getItem('cart')
+    ? JSON.parse(localStorage.getItem('cart'))
+    : [],
   listSearch: [],
   totalCart: 0,
   dataUserLogin: localStorage.getItem('data-users')
@@ -52,14 +54,31 @@ export const ShoesReducer = (state = initailState, action) => {
       return { ...state, listSearch: [...state.listSearch, action.data] };
     case ADD_TO_CART:
       let cloneCart = [...state.cart];
-      const index = cloneCart.findIndex((item) => item.id === action.data.id);
+
+      const index = cloneCart.findIndex(
+        (item) =>
+          item.id === action.data.id &&
+          item.sizeProduct === action.data.sizeProduct
+      );
+
+      const sizeChoose = action.data.sizeShoes.find((size) => size.check);
+      console.log(action.data.sizeProduct, 'index', index);
+
       //Amount in shoesDetail
       let amount = action.id;
-      if (index >= 0) {
+      //Has in cart
+      if (
+        index >= 0
+        // action.data.sizeProduct === cloneCart[index].sizeProduct
+        // sizeChoose.size === cloneCart[index].sizeShoes.find((s) => s.check).size
+      ) {
         let newArr = cloneCart.map((item) => {
-          // && item.sizeShoes[item.id].size === action.data.sizeShoes[action.data.id].size
-          if (item.id === action.data.id) {
-            if (item.amount === null) {
+          if (
+            item.id === action.data.id &&
+            item.sizeProduct === action.data.sizeProduct
+          ) {
+            //Check size shoe in cart match with props data
+            if (!item.amount) {
               return { ...item, amount: item.amount + 1 };
             } else {
               //ACTION ID IS AMOUNT IN SHOES DETAIL
@@ -70,11 +89,18 @@ export const ShoesReducer = (state = initailState, action) => {
           }
         });
         state.cart = newArr;
+        //Localstoreage
+        localStorage.setItem('cart', JSON.stringify(newArr));
         return {
           ...state,
         };
       }
 
+      //Localstoreage
+      localStorage.setItem(
+        'cart',
+        JSON.stringify([...state.cart, action.data])
+      );
       return {
         ...state,
         cart: [...state.cart, action.data],
@@ -83,7 +109,9 @@ export const ShoesReducer = (state = initailState, action) => {
       let cloneCartDele = [...state.cart];
       let idItem = action.data;
 
-      const inde = cloneCartDele.findIndex((item) => item.id === idItem);
+      const inde = cloneCartDele.findIndex(
+        (item) => item.id === idItem && item.sizeProduct === action.id
+      );
 
       if (inde >= 0) {
         cloneCartDele.splice(inde, 1);
@@ -91,26 +119,37 @@ export const ShoesReducer = (state = initailState, action) => {
         console.warn(`Cant remove product (id: ${idItem}) as its not working`);
       }
       state.cart = cloneCartDele;
+
+      //Localstoreage
+      localStorage.setItem('cart', JSON.stringify(cloneCartDele));
       return { ...state };
     case UP_AND_DOWN_CART:
       let arrCartUpDown = [...state.cart];
 
-      let idItemUpDown = action.data;
+      let idItemUpDown = action.data.id;
+      let sizeProduct = action.data.sizeProduct;
 
       const upAndDown = arrCartUpDown.map((item) => {
-        if (action.id === 'up' && item.id === idItemUpDown) {
+        if (
+          action.id === 'up' &&
+          item.id === idItemUpDown &&
+          item.sizeProduct === sizeProduct
+        ) {
           return { ...item, amount: item.amount + 1 };
         }
         if (
           action.id === 'down' &&
           item.id === idItemUpDown &&
-          item.amount > 1
+          item.amount > 1 &&
+          item.sizeProduct === sizeProduct
         ) {
           return { ...item, amount: item.amount - 1 };
         } else {
           return { ...item };
         }
       });
+      //Localstoreage
+      localStorage.setItem('cart', JSON.stringify([...upAndDown]));
       // state.cart = upAndDown;
       return { ...state, cart: [...upAndDown] };
 
